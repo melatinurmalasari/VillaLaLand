@@ -15,28 +15,29 @@
   <?php include "header.php" ?>
 
   <main>
+    <?php
+      require_once 'koneksi.php';
+      $query = $koneksi->query("SELECT * FROM `room` where room_id = '$_GET[room_id]'") or die(mysql_error()); 
+      while($fetch = $query->fetch_array()){
+      ?>
     <section class="hero-destination pt-80">
       <div class="container">
-        <img src="assets/img/Hero.png" class="d-block w-100" alt="">
+        <img src="<?php echo $fetch['photo'] ?>" style="width: 509px; height: 509px; object-fit: fill;" class="d-block w-100" alt="">
       </div>
     </section>
 
     <section class="desc">
       <div class="container">
-        <h1 class="fw-bold mt-3">Seruni Villa</h1>
-        <h5>Belitung</h5>
+        <h1 class="fw-bold mt-3"><?php echo $fetch['room_name'] ?></h1>
         <div class="row">
           <div class="col">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
+              <?php echo $fetch['description'] ?>
             </p>
           </div>
         </div>
       </div>
+      <?php } ?>
     </section>
 
     <section class="facilities">
@@ -100,7 +101,7 @@
                   <h4 class="text-center text-white">Rp. Price</h4>
                 </div> -->
                 <div class="col-12">
-                  <a href="billing.php" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
+                  <a href="billing.php?room_id=<?php echo $_GET['room_id']?>" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
                 </div>
               <!-- </div> -->
             <!-- </div> -->

@@ -20,33 +20,33 @@
         <h1>Billing Details</h1>
         <div class="row gx-5">
           <div class="col-sm-12 col-md-8 border-md-end">
-            <form>
+            <form method="post" enctype = "multipart/form-data">
               <div class="mb-3">
                 <label>First name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="first_name" required>
               </div>
               <div class="mb-3">
                 <label>Last name</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="last_name" required>
               </div>
               <div class="mb-3">
                 <label>Phone</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="contactno" required>
               </div>
               <div class="mb-3">
                 <label>Email Address</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="email" required>
               </div>
               <div class="mb-3">
                   <label for="check-in">Check In</label>
-                  <input type="date" id="checkin" name="checkin">
+                  <input type="date" id="checkin" name="checkin" required>
               </div>
               <div class="mb-3">
                   <label for="check-out">Check Out</label>
-                  <input type="date" id="checkout" name="checkout">
+                  <input type="date" id="checkout" name="checkout" required>
               </div>
-            </form>
           </div>
+          <?php require_once 'query_billing.php' ?>
           <div class="col-sm-12 col-md-4">
             <h3>The Total <br> Amount</h3>
             <div class="d-flex justify-content-between">
@@ -64,8 +64,9 @@
             </div>
             <br>
             <div class="col-12">
-              <a href="billing.php" class="btn btn-primary fw-bold w-100">Buy Now</a>
+              <input type="submit" name="add_guest" value="Buy Now" class="btn btn-primary fw-bold w-100">
             </div>
+            </form>
           </div>
         </div>
       </div>

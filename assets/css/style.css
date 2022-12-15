@@ -347,3 +347,42 @@ main,
   padding: 2rem;
   border-radius: 2rem;
 }
+<<<<<<< HEAD
+=======
+
+/* .mySwiper .swiper-slide,
+    .mySwiper .swiper-slide-active {
+      width: 500px !important;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin: 20px auto;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: #2B5881;
+      background: #F4E379;
+      padding: 2rem;
+      border-radius: 2.5rem;
+      z-index: 1;
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 1rem !important;
+      font-weight: 900;
+    } */
+
+
+    
+>>>>>>> 641526f2ec86697bbc27d8b1968a98e9a25979d6

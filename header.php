@@ -17,12 +17,16 @@
             <a class="nav-link fs-5" href="blog.php">Blog</a>
           </li>
         </ul>
-        <a href="profile.php" class="text-decoration-none">
+        <a href="login.php" class="text-decoration-none">
           <div class="d-flex btn btn-primary p-3 rounded-pill justify-content-center align-items-center">
             <img src="./assets/img/Profil.png" width="35" alt="profil">
-            <span class="ms-3 text-primary fw-semibold">Josa</span>
+            <span class="ms-3 text-primary fw-semibold">Akun</span>
           </div>
         </a>
       </div>
     </div>
   </nav>
+
+  
+
+  

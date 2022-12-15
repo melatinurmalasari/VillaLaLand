@@ -11,6 +11,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
+  
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
 </head>
 

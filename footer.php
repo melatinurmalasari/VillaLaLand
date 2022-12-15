@@ -1,11 +1,11 @@
-<footer class="bg-primary mt-5">
-    <div class="container py-5">
+<footer class="footer-villa bg-primary">
+    <div class="container">
     <div class="row ">
         <div class="col-sm-12 col-md-2">
-        <img src="assets/img/Logo.png" class="d-block me-auto w-100 p-4" alt="Logo">
+            <img src="assets/img/Logo.png" class="d-block me-auto w-100 p-3" alt="Logo">
         </div>
         <div class="col-sm-12 col-md-6 text-white d-flex justify-content-center align-items-center">
-        <div class="d-flex flex-column">
+        <div class="flex-column">
             <p>Plaza Summarecon</p>
             <p>Jl. Perintis Kemerdekaan No.42</p>
             <p>Kayu Putih, Jakarta Timur 13210, Indonesia</p>

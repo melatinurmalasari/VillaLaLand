@@ -12,89 +12,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
-
-  <style>
-    html,
-    body,
-    main,
-    .testimonials,
-    .container,
-    .gallery {
-      position: relative;
-      height: 100%;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-
-    .swiper-slide {
-      text-align: justify;
-      background: #2B5881;
-    }
-
-    .mySwiper .swiper-slide,
-    .mySwiper .swiper-slide-active {
-      width: 500px !important;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 300px;
-      margin: 20px auto;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: #2B5881;
-      background: #F4E379;
-      padding: 2rem;
-      border-radius: 2.5rem;
-      z-index: 1;
-    }
-
-    /* .btn-swiper {
-      color: #2B5881;
-      background: #F4E379;
-      padding: 2rem;
-      border-radius: 2.5rem;
-      top: 0;
-      z-index: 1;
-      top: 80px
-    }
-    
-    .swiper-button-prev {
-      float: right !important;
-      left: 90% !important;
-    }
-
-    .swiper-button-next {
-      float: right !important;
-      right: 0% !important;
-    } */
-
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      font-size: 1rem !important;
-      font-weight: 900;
-    }
-  </style>
 </head>
 
 <body>
   <?php include "header.php" ?>
-  <!-- Main Content -->
+
   <main>
-    <!-- Hero Section -->
     <section class="hero-profile">
       <div class="container h-100 bg-danger">
         <div class="row h-100">
@@ -109,15 +32,9 @@
       </div>
     </section>
 
-    <section class="bg-danger">
-      <h1>tes</h1>
-    </section>
-
     <?php include "footer.php" ?>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
 </body>
-
 </html>

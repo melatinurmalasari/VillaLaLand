@@ -10,23 +10,33 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
 </head>
 
 <body>
-<?php include "header.php" ?>
-  
+  <?php include "header.php" ?>
 
-  <!-- Main Content -->
+  <!-- Back to top button -->
+  <a id="back-to-top">
+    <i class="material-icons">keyboard_arrow_up</i>
+  </a>
+  <!-- End of Back to top button -->
+
   <main>
-    <!-- Hero Section -->
-    <section class="hero-home">
-      <div class="container h-100">
-        <div class="row justify-content-start align-items-center h-100">
-          <div class="col-sm-12 col-md-8 text-white">
-            <h1 class="fs-64">SUITS, SLEEP, SWEET</h1>
-            <p class="fs-20 fw-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    <!-- jumbotron -->
+    <section class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row align-items-center h-100">
+          <div class="col-lg text-white">
+            <h1 class="display-4">SUITS, SLEEP, SWEET</h1>
+            <p class="p-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et
               dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
               fugiat.
@@ -36,11 +46,12 @@
         </div>
       </div>
     </section>
+    <!-- end jumbotron -->
 
-    <!-- Search Section -->
-    <section class="search pt-120">
+    <!-- search villa -->
+    <div class="search-villa reveal fade-bottom">
       <div class="container">
-        <div class="row">
+      <div class="row">
           <div class="col">
             <div class="card bg-primary p-md-4 p-sm-0">
               <div class="row m-4 p-md-4 p-sm-0">
@@ -78,24 +89,25 @@
                   </select>
                 </div>
                 <div class="col-12">
-                  <a href="destination.html" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
+                  <a href="destination2.php" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <!-- end search villa -->
 
     <!-- Exclusive Offers Section -->
-    <section class="offers pt-120">
+    <section class="offers pt-120 reveal fade-bottom">
       <div class="container">
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-sm-12 col-md-8">
             <h1>Treat Yourseld on <br> Exclusive Offers</h1>
           </div>
           <div class="col-sm-12 col-md-4 d-flex justify-content-md-end justify-content-sm-center">
-            <a href="destination.html" class="btn btn-secondary rounded-pill">Discover More</a>
+            <a href="destination2.php" class="btn btn-secondary rounded-pill">Discover More</a>
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
             <div class="card" style="border: none !important;">
@@ -105,7 +117,7 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
@@ -117,7 +129,7 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
@@ -129,7 +141,7 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
@@ -141,7 +153,7 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
@@ -153,7 +165,7 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
@@ -165,23 +177,25 @@
                 <p class="card-text">
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- end exclusive offers -->
 
     <!-- Section Testimonials -->
-    <section class="bg-primary mt-5 py-5">
+    <section class="comment-guest">
       <div class="container">
         <div class="row g-4 justify-content-center align-items-center">
           <div class="col-12">
-            <h1 class="text-white text-sm-center text-md-start">What Say <br> Our Customers</h1>
+            <h1 class="text-sm-center text-md-start reveal">What Say <br> Our Customers</h1>
           </div>
-        </div>
-        <div class="swiper px-8">
+        </div><br>
+        <div class="line-white reveal"></div><br><br>
+        <div class="swiper px-8 reveal fade-bottom">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
               <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
@@ -303,11 +317,13 @@
         </div>
       </div>
     </section>
+    <!-- end testimonials -->
 
     <!-- Gallery Section -->
-    <section class="">
-      <div class="container py-5">
-        <h1 class="text-center mb-5"><u>Villa La Land Gallery</u></h1>
+    <section class="gallery reveal">
+      <div class="container">
+        <h1 class="text-center reveal fade-bottom">Villa La Land Gallery</h1><br>
+        <div class="line-black"></div><br><br>
         <div class="swiper mySwiper1 px-6">
           <div class="swiper-wrapper">
             <div class="swiper-slide px-2">
@@ -335,13 +351,17 @@
         </div>
       </div>
     </section>
+    <!-- end gallery -->
 
     <?php include "footer.php" ?>
+    <script src="scripts/reveal.js"></script>
+    <script src="scripts/backtotop.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -398,7 +418,5 @@
         },
       });
     </script>
-
 </body>
-
 </html>

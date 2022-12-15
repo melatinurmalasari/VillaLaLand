@@ -15,7 +15,6 @@
 <body>
   <?php include "header.php" ?>
 
-  <!-- Main Content -->
   <main>
     <section class="blog pt-120">
       <div class="container">
@@ -23,7 +22,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -37,7 +36,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -51,7 +50,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -65,7 +64,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -79,7 +78,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -93,7 +92,7 @@
         <hr>
         <div class="row my-5">
           <div class="col-sm-12 col-md-8">
-            <a href="blog2.html" class="text-decoration-none">
+            <a href="blog2.php" class="text-decoration-none">
               <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
             </a>
             <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

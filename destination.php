@@ -25,7 +25,7 @@
             <h1 class="fw-bold">Let's Choice <br> Where You Can Relax</h1>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -33,7 +33,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -41,7 +41,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -49,7 +49,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -57,7 +57,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -65,7 +65,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -73,7 +73,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -81,7 +81,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>
@@ -89,7 +89,7 @@
             </a>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <a href="destination2.html">
+            <a href="destination2.php">
               <div class="card card-destinations" style="border: none !important;">
                 <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="...">
                 <div class="overlay p-4">Testing</div>

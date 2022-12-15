@@ -15,10 +15,7 @@
 <body>
   <?php include "header.php" ?>
 
-  <!-- Main Content -->
   <main>
-
-    <!-- Hero Section -->
     <section class="hero-destination pt-80">
       <div class="container">
         <img src="assets/img/Hero.png" class="d-block w-100" alt="">
@@ -74,16 +71,16 @@
           </div>
         </div>
       </div>
+      
     </section>
 
-    <!-- Search Section -->
     <section class="search pt-5 mt-5">
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="card bg-primary p-md-4 p-sm-0">
-              <div class="row m-4 p-md-4 p-sm-0">
-                <div class="col-12 mb-3">
+            <!-- <div class="card bg-primary p-md-4 p-sm-0"> -->
+              <!-- <div class="row m-4 p-md-4 p-sm-0"> -->
+                <!-- <div class="col-12 mb-3">
                   <h1 class="text-center text-white">Search for Your Villa</h1>
                 </div>
                 <div class="col-md-6 col-sm-12 mb-3">
@@ -102,12 +99,12 @@
                 </div>
                 <div class="col-12">
                   <h4 class="text-center text-white">Rp. Price</h4>
-                </div>
+                </div> -->
                 <div class="col-12">
-                  <a href="destination4.html" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
+                  <a href="billing.php" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
                 </div>
-              </div>
-            </div>
+              <!-- </div> -->
+            <!-- </div> -->
           </div>
         </div>
       </div>

@@ -15,14 +15,14 @@
 <body>
   <?php include "header.php" ?>
 
-  <!-- Main Content -->
   <main>
-    <!-- Exclusive Offers Section -->
     <section class="destinations pt-120">
       <div class="container">
         <div class="row gx-5">
           <div class="col-12 d-flex align-items-center justify-content-center mb-3 text-center">
-            <h1 class="fw-bold">Find Your Perfect <br> Villa in <span style="color: #2B5881">Belitung</span> </h1>
+            <h1 class="fw-bold">Find Your Perfect Villa 
+            <!-- in <span style="color: #2B5881">Belitung</span>  -->
+          </h1>
           </div>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
@@ -33,10 +33,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -46,10 +47,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -59,10 +61,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -72,10 +75,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -85,10 +89,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -98,10 +103,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -111,10 +117,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -124,10 +131,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
               <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
@@ -137,10 +145,11 @@
                   Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
                 <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.html" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
+          
           <div class="d-flex w-100 justify-content-center align-items-center">
             <a href="" class="btn btn-secondary rounded-pill">Load More</a>
           </div>

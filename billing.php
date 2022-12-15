@@ -15,7 +15,6 @@
 <body>
   <?php include "header.php" ?>
 
-  <!-- Main Content -->
   <main>
     <section class="billing pt-120">
       <div class="container">
@@ -32,18 +31,6 @@
                 <input type="text" class="form-control">
               </div>
               <div class="mb-3">
-                <label>Address</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label>Post Code</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label>Town</label>
-                <input type="text" class="form-control">
-              </div>
-              <div class="mb-3">
                 <label>Phone</label>
                 <input type="text" class="form-control">
               </div>
@@ -52,8 +39,12 @@
                 <input type="text" class="form-control">
               </div>
               <div class="mb-3">
-                <label>Additional Information</label>
-                <input type="text" class="form-control">
+                  <label for="check-in">Check In</label>
+                  <input type="date" id="checkin" name="checkin">
+              </div>
+              <div class="mb-3">
+                  <label for="check-out">Check Out</label>
+                  <input type="date" id="checkout" name="checkout">
               </div>
             </form>
           </div>
@@ -71,6 +62,10 @@
             <div class="d-flex justify-content-between">
               <b>The Total Amount of <br> (including VAT)</b>
               <p>Rp.-</p>
+            </div>
+            <br>
+            <div class="col-12">
+              <a href="billing.php" class="btn btn-primary fw-bold w-100">Buy Now</a>
             </div>
           </div>
         </div>

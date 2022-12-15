@@ -11,7 +11,7 @@
             <a class="nav-link active fs-5" href="index.php">Home</a>
           </li>
           <li class="nav-item mx-2">
-            <a class="nav-link fs-5" href="destination.php">Destination</a>
+            <a class="nav-link fs-5" href="destination2.php">Destination</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link fs-5" href="blog.php">Blog</a>

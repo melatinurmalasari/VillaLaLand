@@ -15,7 +15,7 @@
         <div class="col-sm-12 col-md-2 text-white">
         <h4>Content</h4>
         <div class="d-flex flex-column mt-4">
-            <a href="destination.php" class="text-white text-decoration-none mb-2">Destination</a>
+            <a href="destination2.php" class="text-white text-decoration-none mb-2">Destination</a>
             <a href="blog.php" class="text-white text-decoration-none mb-2">Blog</a>
             <a href="index.php" class="text-white text-decoration-none mb-2">Profile</a>
         </div>

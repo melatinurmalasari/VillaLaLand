@@ -24,131 +24,25 @@
             <!-- in <span style="color: #2B5881">Belitung</span>  -->
           </h1>
           </div>
+          <?php
+          require_once 'koneksi.php';
+          $query = $koneksi->query("SELECT * FROM `room` ORDER BY `price` ASC") or die(mysql_error()); 
+          while($fetch = $query->fetch_array()){
+          ?>
           <div class="col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
+              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
+                <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
                 <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                  <?php echo $fetch['description'] ?>
                 </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
+                <h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5>
+                <a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
               </div>
             </div>
           </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xl-4 col-md-6 col-sm-12 my-4">
-            <div class="card shadow shadow-md rounded-4 p-4" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <h5 class="mb-4">Rp3,628,503 / Day</h5>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-              </div>
-            </div>
-          </div>
+          <?php } ?>
           
           <div class="d-flex w-100 justify-content-center align-items-center">
             <a href="" class="btn btn-secondary rounded-pill">Load More</a>

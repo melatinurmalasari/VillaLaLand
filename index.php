@@ -10,12 +10,8 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<<<<<<< HEAD
-  <link rel="stylesheet" href="./assets/css/style.css">
-=======
   <link rel="stylesheet" href="assets/css/style.css">
   
->>>>>>> 641526f2ec86697bbc27d8b1968a98e9a25979d6
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
 
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
@@ -111,7 +107,7 @@
           <div class="col-sm-12 col-md-8">
             <h1>Treat Yourseld on <br> Exclusive Offers</h1>
           </div>
-          <div class="col-sm-12 col-md-4 d-flex justify-content-md-end justify-content-sm-center">
+          <div class="button-des col-sm-12 col-md-4 d-flex justify-content-md-end justify-content-sm-center">
             <a href="destination2.php" class="btn btn-secondary rounded-pill">Discover More</a>
           </div>
           <div class="col-sm-12 col-md-6 col-xl-4">
@@ -150,42 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard4.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard5.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard6.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>
@@ -221,6 +182,7 @@
                 </div>
               </div>
             </div>
+            
             <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
               <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
                 rerum magnam sint

@@ -78,33 +78,9 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <!-- <div class="card bg-primary p-md-4 p-sm-0"> -->
-              <!-- <div class="row m-4 p-md-4 p-sm-0"> -->
-                <!-- <div class="col-12 mb-3">
-                  <h1 class="text-center text-white">Search for Your Villa</h1>
-                </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check In">
-                </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check Out">
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option value="">Bedrooms</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <h4 class="text-center text-white">Rp. Price</h4>
-                </div> -->
                 <div class="col-12">
                   <a href="billing.php?room_id=<?php echo $_GET['room_id']?>" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
                 </div>
-              <!-- </div> -->
-            <!-- </div> -->
           </div>
         </div>
       </div>

@@ -135,6 +135,27 @@ html{
   align-items: center;
 }
 
+/* blog */
+.blog{
+  margin-top: 150px;
+  text-align: left;
+}
+.blog h1{
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.blog h2{
+font-size: 25px;
+font-weight: 400;
+line-height: 20px;
+}
+.blog p{
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
 .comment-guest{
   background-color: #4377A7;
   color: white;
@@ -147,7 +168,192 @@ html{
 }
 
 .gallery{
-  margin-top: 80px;
+  margin: 100px 0;
+}
+
+.gallery .swiper-slide{
+  opacity: 0.5;
+  cursor: pointer;
+  float: left;
+  width: 20%;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.gallery .swiper-slide:hover{
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.offers{
+  padding: 25px;
+}
+
+.offers h1{
+  margin: 0 0 15% 0;
+}
+
+.offers .button-des{
+  margin: 0 0 5% 0;
+}
+
+/* coba */
+.card-img-top{
+  height:200px;
+  margin-top: -90px;
+  background-size: cover;
+
+}
+
+.pro-img {
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.little-profile .pro-img img {
+  width: 128px;
+  height: 128px;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 100%
+}
+
+/* avatar */
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: -50px 0 10px;
+}
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+.avatar-upload .avatar-edit input {
+  display: none;
+}
+.avatar-upload .avatar-edit input + label {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+  content: "\f040";
+  font-family: 'FontAwesome';
+  color: #757575;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.avatar-upload .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 1px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.avatar-upload .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+html body .m-b-0 {
+  margin-bottom: 0px
+}
+
+h3 {
+  line-height: 30px;
+  font-size: 21px
+}
+
+.btn-rounded.btn-md {
+  padding: 12px 35px;
+  font-size: 16px
+}
+
+html body .m-t-10 {
+  margin-top: 5px
+}
+
+.btn-primary,
+.btn-primary.disabled {
+  background: #7460ee;
+  border: 1px solid #7460ee;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(116, 96, 238, 0.14), 0 3px 1px -2px rgba(116, 96, 238, 0.2), 0 1px 5px 0 rgba(116, 96, 238, 0.12);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in
+}
+
+.btn-rounded {
+  border-radius: 60px;
+  padding: 7px 18px
+}
+
+/* tab */
+.tab-book {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 20px;
+}
+
+/* Style the buttons inside the tab */
+.tab-book button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 50px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
+.m-t-20 {
+  margin-top: 20px
 }
 
 .pt-120 {
@@ -212,8 +418,11 @@ html{
 }
 
 .footer-villa{
-  height: 250px;
+  height: 200px;
+  flex-grow: 0;
+  width: 100%;
   background: #4377A7;
+  margin: 56px 0;
 }
 .footer-villa p{
   color: white;
@@ -272,7 +481,6 @@ html{
 }
 
 .hero-profile {
-  background: url("../img/BgProfile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -281,12 +489,13 @@ html{
   height: 100%;
 }
 
+/* edit img */
+
 html,
 body,
 main,
 .testimonials,
-.container,
-.gallery {
+.container{
   position: relative;
   height: 100%;
 }
@@ -318,9 +527,13 @@ main,
 .swiper-slide-testimonials {
   text-align: center;
   background: #2B5881;
+  position: relative;
+  width: 800px;
+  height: 300px;
+  display: flex;
 
   /* Center slide text vertically */
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -331,7 +544,7 @@ main,
   -webkit-box-align: center;
   -ms-flex-align: center;
   -webkit-align-items: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .swiper-button-next.bg:after,
@@ -347,42 +560,4 @@ main,
   padding: 2rem;
   border-radius: 2rem;
 }
-<<<<<<< HEAD
-=======
 
-/* .mySwiper .swiper-slide,
-    .mySwiper .swiper-slide-active {
-      width: 500px !important;
-    }
-
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .swiper {
-      width: 100%;
-      height: 300px;
-      margin: 20px auto;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: #2B5881;
-      background: #F4E379;
-      padding: 2rem;
-      border-radius: 2.5rem;
-      z-index: 1;
-    }
-
-    .swiper-button-next:after,
-    .swiper-button-prev:after {
-      font-size: 1rem !important;
-      font-weight: 900;
-    } */
-
-
-    
->>>>>>> 641526f2ec86697bbc27d8b1968a98e9a25979d6

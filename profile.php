@@ -10,8 +10,17 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  
   <link rel="icon" type="image/x-icon" href="./assets/img/Logo.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
@@ -19,22 +28,81 @@
 
   <main>
     <section class="hero-profile">
-      <div class="container h-100 bg-danger">
-        <div class="row h-100">
-          <div class="col-sm-12 col-md-8">
-            <div class="d-flex justify-content-center align-items-center">
-              <img src="./assets/img/Profil.png" alt="">
-              <h4>Kevin Alexander</h4>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4"></div>
-        </div>
-      </div>
-    </section>
+        <div class="row">
+            <div class="col-lg">
+            <img class="page-header card-img-top " src="https://i.imgur.com/8RKXAIV.jpg" alt="Card image cap">
+                  <div class="container">
+                      <div class="row little-profile">
+                        <div class="col-md-2 profile-pic">
+                              <div class="avatar-upload">
+                                  <div class="avatar-preview">
+                                      <div id="imagePreview" style="background-image: url('https://i.imgur.com/8RKXAIV.jpg');">
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        <div class="col-md-4" style="margin: 20px; ">
+                            <h2 style="font-weight: 600;">Kevin Alexander</h2>
+                            <p>Jakarta</p> 
+                        </div>
+                        <div class="col-md-4" style="margin-top: 50px;">
+                          <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                        </div>
+                      </div>
+                        <div class="tab-book">
+                          <button class="tablinks" onclick="openCity(event, 'current-book')">Current Booking</button>
+                          <button class="tablinks" onclick="openCity(event, 'book-history')">Booking History</button>
+                        </div>
 
+                        <div id="current-book" class="tabcontent">
+                          <center>
+                          <div class="booking">
+                            <h5>No Booked Yet</h5>
+                            <p>Anything you booked shows up here, but it seems like you haven’t made any. Let’s create one via destination page!</p>
+                            <a href="destination2.php" class="btn btn-secondary rounded-pill" data-abc="true">Make a Villa Reservation</a>
+                          </div> 
+                          </center>
+                          
+                        </div>
+
+                        <div id="book-history" class="tabcontent">
+                          <center>
+                            <div class="card secondary w3-hover-shadow w3-padding-8" style="width:80%">
+                              <div class="card-body">
+                                <h2 class="card-title">Ubud Bali Resort</h2>
+                                <p class="card-text">Check In : 2022-12-03</p>
+                                <p class="card-text">Check Out : 2022-12-05</p>
+                                <a href="#" class="btn btn-primary rounded">Book Again</a>
+                              </div>
+                            </div>
+                          </center>
+                        </div>
+                    </div>
+                  </div>
+                
+        </div>
+    </section>
+  
     <?php include "footer.php" ?>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

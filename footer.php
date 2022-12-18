@@ -5,12 +5,12 @@
             <img src="assets/img/Logo.png" class="d-block me-auto w-100 p-3" alt="Logo">
         </div>
         <div class="col-sm-12 col-md-6 text-white d-flex justify-content-center align-items-center">
-        <div class="flex-column">
-            <p>Plaza Summarecon</p>
-            <p>Jl. Perintis Kemerdekaan No.42</p>
-            <p>Kayu Putih, Jakarta Timur 13210, Indonesia</p>
-            <p>Open In Google Maps</p>
-        </div>
+            <div class="flex-column">
+                <p>Plaza Summarecon</p>
+                <p>Jl. Perintis Kemerdekaan No.42</p>
+                <p>Kayu Putih, Jakarta Timur 13210, Indonesia</p>
+                <p>Open In Google Maps</p>
+            </div>
         </div>
         <div class="col-sm-12 col-md-2 text-white">
         <h4>Content</h4>

@@ -22,9 +22,38 @@
 </head>
 
 <body>
-  <?php include "header.php" ?>
+	<!--========== NAVBAR ==========-->
+	<nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top shadow shadow-md">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./assets/img/Logo.png" alt="Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link active fs-5" href="#home">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#tentangkami">Tentang Kami</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link fs-5" href="#">Meet our Team</a>
+          </li>
+        </ul>
+        <a href="login.php" class="text-decoration-none">
+          <div class="d-flex btn btn-primary p-3 rounded-pill justify-content-center align-items-center">
+            <img src="./assets/img/Profil.png" width="35" alt="profil">
+            <span class="ms-3 text-primary fw-semibold">Akun</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </nav>
+	<!--========== END OF NAVBAR ==========-->
 
-  <!-- Back to top button -->
+    <!-- Back to top button -->
   <a id="back-to-top">
     <i class="material-icons">keyboard_arrow_up</i>
   </a>
@@ -32,7 +61,7 @@
 
   <main>
     <!-- jumbotron -->
-    <section class="jumbotron jumbotron-fluid">
+    <section class="jumbotron jumbotron-fluid" id="home">
       <div class="container">
         <div class="row align-items-center h-100">
           <div class="col-lg text-white">
@@ -49,341 +78,117 @@
     </section>
     <!-- end jumbotron -->
 
-    <!-- search villa -->
-    <div class="search-villa reveal fade-bottom">
-      <div class="container">
-      <div class="row">
-          <div class="col">
-            <div class="card bg-primary p-md-4 p-sm-0">
-              <div class="row m-4 p-md-4 p-sm-0">
-                <div class="col-12 mb-3">
-                  <h1 class="text-center text-white">Search for Your Villa</h1>
-                </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check In">
-                </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check Out">
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option value="">Bedrooms</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option selected>Area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option selected>Price Range</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <a href="destination2.php" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- end search villa -->
+		<section class="about mt-5 pt-5" id="tentangkami">
+			<div class="container h-100">
+				<div class="row h-100 gx-5">
+					<div class="col-6 d-flex flex-column justify-content-center">
+						<img src="assets/img/vilaaaaa.png"
+							alt="About Villa La Land" class="img-fluid p-5">
+					</div>
+					<div class="col-6 d-flex flex-column justify-content-center">
+						<h2>Tentang Kami</h2>
+						<p>
+							Villa La Land adalah Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
+							ab, tenetur repellendus corrupti exercitationem expedita quasi fugit excepturi obcaecati
+							nihil in, qui ratione, officia sint illum consectetur iusto. Odit, mollitia!
+						</p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod excepturi blanditiis est
+							laboriosam mollitia! Ad nisi quibusdam deleniti, nostrum ipsam, accusantium reiciendis
+							dolorum dolore error, architecto sit nihil maiores? Vel quae error natus accusantium!
+						</p>
+						<span><a href="#about" class="btn btn-primary px-3 mt-4 fw-bold">About Villa La Land</a></span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="film">
+			<div class="container p-5">
+				<div class="row p-5">
+					<div class="col p-5 bg-warning shadow shadow-lg">
+						<iframe width="100%" height="500" src="https://www.youtube.com/embed/Fez9jsONpRE"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container h-100">
+				<div class="row h-100 d-flex align-items-center">
+					<div class="col-xl-4 mb-3">
+						<div class="card">
+							<div class="card-header py-3">
+								<h5 class="text-center"><strong>Keunggulan 1</strong></h5>
+							</div>
+							<div class="card-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="card">
+							<div class="card-header py-3">
+								<h5 class="text-center"><strong>Keunggulan 2</strong></h5>
+							</div>
+							<div class="card-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4">
+						<div class="card">
+							<div class="card-header py-3">
+								<h5 class="text-center"><strong>Keunggulan 3</strong></h5>
+							</div>
+							<div class="card-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
+								assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
+								distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<section>
+	
+	<!--kureng footer plissssssssssssssss-->
+	
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+	</script>
 
-    <!-- Exclusive Offers Section -->
-    <section class="offers pt-120 reveal fade-bottom">
-      <div class="container">
-        <div class="row g-4 justify-content-center align-items-center">
-          <div class="col-sm-12 col-md-8">
-            <h1>Treat Yourseld on <br> Exclusive Offers</h1>
-          </div>
-          <div class="button-des col-sm-12 col-md-4 d-flex justify-content-md-end justify-content-sm-center">
-            <a href="destination2.php" class="btn btn-secondary rounded-pill">Discover More</a>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard1.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard2.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-xl-4">
-            <div class="card" style="border: none !important;">
-              <img src="assets/img/VillaCard3.png" class="card-img-top" alt="...">
-              <div class="card-body py-4 px-0">
-                <h4 class="card-title">Nama Villa</h4>
-                <p class="card-text">
-                  Alamat Villa - incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-                <a href="destination3.php" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a>
-              </div>
-            </div>
-          </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+		const navbar = document.querySelector('.navbar');
+		window.onscroll = () => {
+			if (window.scrollY > 300) {
+				navbar.classList.add('active');
+			} else {
+				navbar.classList.remove('active');
+			}
+		};
+	</script>
 
-        </div>
-      </div>
-    </section>
-    <!-- end exclusive offers -->
-
-    <!-- Section Testimonials -->
-    <section class="comment-guest">
-      <div class="container">
-        <div class="row g-4 justify-content-center align-items-center">
-          <div class="col-12">
-            <h1 class="text-sm-center text-md-start reveal">What Say <br> Our Customers</h1>
-          </div>
-        </div><br>
-        <div class="line-white reveal"></div><br><br>
-        <div class="swiper px-8 reveal fade-bottom">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-            
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
-              <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore
-                rerum magnam sint
-                expedita odio excepturi numquam qui quasi.
-              </p>
-              <span class="line mb-3"></span>
-              <div class="d-flex justify-content-between align-items-center w-100">
-                <div class="d-flex justify-content-center align-items-center">
-                  <img src="./assets/img/Profil.png" class="d-block img-testimonials" alt="">
-                  <h6 class="ms-2 mt-1">Chelsea Island</h6>
-                </div>
-                <div class="d-flex">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                  <img src="./assets/img/star.png" class="stars mx-1" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev bg"></div>
-          <div class="swiper-button-next bg"></div>
-        </div>
-      </div>
-    </section>
-    <!-- end testimonials -->
-
-    <!-- Gallery Section -->
-    <section class="gallery reveal">
-      <div class="container">
-        <h1 class="text-center reveal fade-bottom">Villa La Land Gallery</h1><br>
-        <div class="line-black"></div><br><br>
-        <div class="swiper mySwiper1 px-6">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard1.png" class="d-block w-100" alt="">
-            </div>
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard2.png" class="d-block w-100" alt="">
-            </div>
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard3.png" class="d-block w-100" alt="">
-            </div>
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard4.png" class="d-block w-100" alt="">
-            </div>
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard5.png" class="d-block w-100" alt="">
-            </div>
-            <div class="swiper-slide px-2">
-              <img src="./assets/img/VillaCard6.png" class="d-block w-100" alt="">
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <!-- end gallery -->
-
-    <?php include "footer.php" ?>
-    <script src="scripts/reveal.js"></script>
-    <script src="scripts/backtotop.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper1 = new Swiper('.swiper', {
-        slidesPerView: 3,
-        watchSlidesProgress: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        },
-      });
-
-      var swiper2 = new Swiper('.mySwiper1', {
-        slidesPerView: 3,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        breakpoints: {
-          "@0.00": {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          "@0.75": {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          "@1.00": {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          "@1.50": {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        },
-      });
-    </script>
 </body>
+
 </html>

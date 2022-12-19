@@ -29,6 +29,8 @@
     <section class="desc">
       <div class="container">
         <h1 class="fw-bold mt-3"><?php echo $fetch['room_name'] ?></h1>
+        <h3 class="fw-bold mt-3"><?php echo $fetch['room_place'] ?></h3>
+        <hr>
         <div class="row">
           <div class="col">
             <p>
@@ -41,6 +43,11 @@
     </section>
 
     <section class="facilities">
+       <?php
+      require_once 'koneksi.php';
+      $query = $koneksi->query("SELECT * FROM `room` where room_id = '$_GET[room_id]'") or die(mysql_error()); 
+      while($fetch = $query->fetch_array()){
+      ?>
       <div class="container">
         <h5>Facilities</h5>
         <hr>
@@ -48,30 +55,30 @@
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
               <img src="" alt="">
-              <h3>2 Bedrooms</h3>
+              <h3><?php echo $fetch['bedroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
               <img src="" alt="">
-              <h3>TV</h3>
+              <h3><?php echo $fetch['bathroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
               <img src="" alt="">
-              <h3>Wi-Fi</h3>
+              <h3><?php echo $fetch['wifi'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
               <img src="" alt="">
-              <h3>1 Bathroom</h3>
+              <h3><?php echo $fetch['pool'] ?></h3>
             </div>
           </div>
         </div>
       </div>
-      
+      <?php } ?>
     </section>
 
     <section class="search pt-5 mt-5">

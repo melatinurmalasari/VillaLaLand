@@ -32,6 +32,8 @@
               <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
+                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <hr>
                 <p class="card-text">
                   <?php echo $fetch['description'] ?>
                 </p>

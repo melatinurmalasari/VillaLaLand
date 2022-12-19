@@ -22,6 +22,7 @@
           <div class="col-12 d-flex align-items-center justify-content-center mb-3 text-center">
             <h1 class="fw-bold">Find Your Perfect Villa in Villa La Land</h1>
           </div>
+          <hr>
           <?php
           require_once 'koneksi.php';
           $query = $koneksi->query("SELECT * FROM `room` ORDER BY `price` ASC") or die(mysql_error()); 
@@ -29,9 +30,15 @@
           ?>
           <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="cat-card card shadow shadow-md rounded-4 p-4" style="border: none !important;">
+              <br>
+              <br>
+              <br>
+              <br>
               <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
+                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <hr>
                 <p class="card-text">
                   <?php echo $fetch['description'] ?>
                 </p>
@@ -52,21 +59,6 @@
     <?php include "footer.php" ?>
   </main>
 
-  <script>
-    $(document).ready(function () {
-        //hide all item
-        $('.cat-wrap .cat-card').hide();
-      
-        //show items
-        $('.cat-wrap').children('.cat-card:lt(3)').show();
-      
-        //load more
-        $('.load-more').click(function (e) {
-          e.preventDefault()
-          $('.cat-wrap').children('.cat-card:hidden:lt(3)').slideDown();
-        });
-      });
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>

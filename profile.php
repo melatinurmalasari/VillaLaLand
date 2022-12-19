@@ -41,12 +41,21 @@
                                   </div>
                               </div>
                           </div>
+                          <?php
+                          require_once 'koneksi.php';
+                          $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
+                          while($fetch = $query->fetch_array()){
+                            ?>
                         <div class="col-md-4" style="margin: 20px; ">
-                            <h2 style="font-weight: 600;">Kevin Alexander</h2>
-                            <p>Jakarta</p> 
+                            <h2 style="font-weight: 600;"><?php echo $fetch['username'] ?></h2>
+                            <p><?php echo $fetch['kota'] ?></p> 
                         </div>
+                        `<?php } ?>
                         <div class="col-md-4" style="margin-top: 50px;">
                           <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                        </div>
+                        <div class="col-md-4" style="margin-top: 50px;">
+                          <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
                         </div>
                       </div>
                         <div class="tab-book">

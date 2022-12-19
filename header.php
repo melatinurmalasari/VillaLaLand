@@ -17,11 +17,16 @@
             <a class="nav-link fs-5" href="blog.php">Blog</a>
           </li>
         </ul>
-        <a href="login.php" class="text-decoration-none">
-          <div class="d-flex btn btn-primary p-3 rounded-pill justify-content-center align-items-center">
-            <img src="./assets/img/Profil.png" width="35" alt="profil">
-            <span class="ms-3 text-primary fw-semibold">Akun</span>
+        <a href="profile.php" class="text-decoration-none">
+          <?php
+          require_once 'koneksi.php';
+          $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
+          while($fetch = $query->fetch_array()){
+          ?>
+          <div class="d-flex btn btn-primary rounded-pill justify-content-center align-items-center">
+            <span class="text-primary fw-semibold"><?php echo $fetch['username'] ?></span>
           </div>
+          <?php } ?>
         </a>
       </div>
     </div>

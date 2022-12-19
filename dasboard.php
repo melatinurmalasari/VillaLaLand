@@ -137,10 +137,6 @@
             </div>
           </div>
           <?php } ?>
-          
-          <div class="load-more d-flex w-100 justify-content-center align-items-center">
-            <a href="" class="btn btn-secondary rounded-pill">Load More</a>
-          </div>
         </div>
       </div>
 

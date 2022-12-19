@@ -44,8 +44,7 @@
         </ul>
         <a href="login.php" class="text-decoration-none">
           <div class="d-flex btn btn-primary p-3 rounded-pill justify-content-center align-items-center">
-            <img src="./assets/img/Profil.png" width="35" alt="profil">
-            <span class="ms-3 text-primary fw-semibold">Akun</span>
+            <span class="ms-3 text-primary fw-semibold">Masuk/Daftar</span>
           </div>
         </a>
       </div>
@@ -113,7 +112,28 @@
 				</div>
 			</div>
 		</section>
-		<section class="about" id="about">
+		
+		<!-- maps -->
+	<div class="container mt-5">
+            <h1 class="judul text-center mb-5">Temukan kami</h3>
+            <div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+              <iframe
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. A. Yani No.212c, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+       </div>
+       <!-- akhir maps-->
+
+	   <section class="about mt-5 pt-5" id="about">
+			<div class="container h-100">
+				<div class="row h-100 gx-5">
+	   <section class="about">
 			<div class="container h-100">
 				<div class="row h-100 d-flex align-items-center">
 					<div class="col-xl-4 mb-3">
@@ -164,8 +184,7 @@
 				</div>
 			</div>
 		</section>
-	</main>
-	<section>
+	   
 	
 	<!--kureng footer plissssssssssssssss-->
 	

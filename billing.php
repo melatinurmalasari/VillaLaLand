@@ -17,9 +17,9 @@
   <main>
     <section class="billing pt-120">
       <div class="container">
-        <h1>Billing Details</h1>
+        <h1 class="text-center">Billing Details</h1>
         <div class="row gx-5">
-          <div class="col-sm-12 col-md-8 border-md-end">
+          <div class="col-sm-12 col-md-8 border-md-end justify-content-center mx-auto">
             <form method="post" enctype = "multipart/form-data">
               <div class="mb-3">
                 <label>First name</label>
@@ -39,32 +39,15 @@
               </div>
               <div class="mb-3">
                   <label for="check-in">Check In</label>
-                  <input type="date" id="checkin" name="checkin" required>
+                  <input class="form-control" type="date" id="checkin" name="checkin" required>
               </div>
               <div class="mb-3">
                   <label for="check-out">Check Out</label>
-                  <input type="date" id="checkout" name="checkout" required>
+                  <input class="form-control" type="date" id="checkout" name="checkout" required>
               </div>
-          </div>
-          <?php require_once 'query_billing.php' ?>
-          <div class="col-sm-12 col-md-4">
-            <h3>The Total <br> Amount</h3>
-            <div class="d-flex justify-content-between">
-              <p>Amount Payable</p>
-              <p>Rp.-</p>
-            </div>
-            <div class="d-flex justify-content-between">
-              <p>Shipping</p>
-              <p>Rp.-</p>
-            </div>
-            <hr>
-            <div class="d-flex justify-content-between">
-              <b>The Total Amount of <br> (including VAT)</b>
-              <p>Rp.-</p>
-            </div>
-            <br>
-            <div class="col-12">
-              <input type="submit" name="add_guest" value="Buy Now" class="btn btn-primary fw-bold w-100">
+              <div class="col-12">
+              <input type="submit" name="add_guest" value="Next" class="btn btn-primary fw-bold w-100">
+              <?Php require_once 'query_billing.php' ?>
             </div>
             </form>
           </div>
@@ -72,6 +55,7 @@
       </div>
     </section>
   </main>
+
 
   <?php include "footer.php" ?>
 

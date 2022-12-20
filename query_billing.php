@@ -30,8 +30,8 @@ if (isset($_POST['add_guest'])){
 		}else{	
 			if($guest_id = $fetch['guest_id']){
 				$room_id = $_REQUEST['room_id'];
-				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin) VALUES('$guest_id', '$room_id', '$checkin')") or die(mysqli_error());
-				header("location:index.php");
+				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email')") or die(mysqli_error());
+				header("location:transaksi.php");
 			}else{
 				echo "<script>alert('Error Javascript Exception!')</script>";
 			}

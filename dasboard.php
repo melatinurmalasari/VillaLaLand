@@ -111,35 +111,35 @@
             <a href="destination2.php" class="btn btn-secondary rounded-pill">Discover More</a>
           </div>
           <div class="container">
-            <div class="row gx-5">
-            <?php
-            require_once 'koneksi.php';
-            $query = $koneksi->query("SELECT * FROM `room` ORDER BY `price` ASC") or die(mysql_error()); 
-            while($fetch = $query->fetch_array()){
-            ?>
-            <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
-              <div class="cat-card card shadow shadow-md rounded-4 p-4" style="border: none !important;">
+        <div class="row gx-5">
+          <?php
+          require_once 'koneksi.php';
+          $query = $koneksi->query("SELECT * FROM `room` LIMIT 3") or die(mysql_error()); 
+          while($fetch = $query->fetch_array()){
+          ?>
+          <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
+            <div class="cat-card card shadow shadow-md rounded-4 p-4 h-100" style="border: none !important;">
+              <br>
+              <br>
+              <br>
+              <br>
+              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
+              <div class="card-body py-4 px-0">
+                <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
+                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <hr>
+                <p class="card-text">
+                  <?php echo $fetch['description'] ?>
+                </p>
                 <br>
-                <br>
-                <br>
-                <br>
-                <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
-                <div class="card-body py-4 px-0">
-                  <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
-                  <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
-                  <hr>
-                  <p class="card-text">
-                    <?php echo $fetch['description'] ?>
-                  </p>
-                  <h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5>
-                  <a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a>
-                </div>
               </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a></li>
+              </ul>
             </div>
             <?php } ?>
           </div>
         </div>
-
         </div>
       </div>
     </section>

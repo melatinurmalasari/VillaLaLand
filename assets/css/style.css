@@ -185,18 +185,6 @@ line-height: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.offers{
-  padding: 25px;
-}
-
-.offers h1{
-  margin: 0 0 15% 0;
-}
-
-.offers .button-des{
-  margin: 0 0 5% 0;
-}
-
 /* coba */
 .card-img-top{
   height:200px;

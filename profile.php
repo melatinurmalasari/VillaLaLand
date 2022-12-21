@@ -39,6 +39,29 @@
                                   </div>
                               </div>
                           </div>
+<<<<<<< HEAD
+=======
+                          <?php
+                          require_once 'koneksi.php';
+                          $query = $koneksi->query("SELECT * FROM `users` WHERE id = $idUserInput") or die(mysql_error()); 
+                          while($fetch = $query->fetch_array()){
+                            ?>
+                        <div class="col-md-4" style="margin: 20px; ">
+                            <h2 style="font-weight: 600;"><?php echo $username ?></h2>
+                            <p><?php echo $fetch['kota'] ?></p> 
+                        </div>
+                        `<?php } ?>
+                        <div class="col-md-4" style="margin-top: 50px;">
+                          <a href="edit_profile.php?id_user=<?= $idUserInput ?>" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                        </div>
+                        <div class="col-md-4" style="margin-top: 50px;">
+                          <form action="" method="POST" class="login-email">
+                            <div class="input-group">
+                              <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
+                            </div>
+                          </form>
+                        </div>
+>>>>>>> eadcea2 (fix logic banyak)
                       </div>
                       <?php
                       require_once 'koneksi.php';

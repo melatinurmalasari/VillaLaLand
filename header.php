@@ -1,3 +1,14 @@
+<?php
+require_once 'koneksi.php';
+if (!isset($_SESSION)) {
+  session_start();
+  $username = $_SESSION['username'];
+  $idUser = mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$username';");
+                $idUserFetch = mysqli_fetch_array($idUser);
+                $idUserInput = $idUserFetch['id'];
+}
+?>
+
 <nav class="navbar navbar-expand-lg bg-primary navbar-dark fixed-top shadow shadow-md">
     <div class="container">
       <a class="navbar-brand" href="index.html"><img src="./assets/img/Logo.png" alt="Logo"></a>
@@ -18,15 +29,13 @@
           </li>
         </ul>
         <a href="profile.php" class="text-decoration-none">
-          <?php
-          require_once 'koneksi.php';
-          $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
-          while($fetch = $query->fetch_array()){
-          ?>
           <div class="d-flex btn btn-primary rounded-pill justify-content-center align-items-center">
+<<<<<<< HEAD
             <span style="color : white ;"><?php echo $fetch['username'] ?></span>
+=======
+            <span class="text-primary fw-semibold"><?php echo $username ?></span>
+>>>>>>> eadcea2 (fix logic banyak)
           </div>
-          <?php } ?>
         </a>
       </div>
     </div>

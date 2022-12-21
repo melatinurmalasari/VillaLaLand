@@ -7,7 +7,12 @@ if (isset($_POST['add_guest'])){
 	$email = $_POST['email'];
 	$checkin = $_POST['checkin'];
 	$checkout = $_POST['checkout'];
-	$koneksi->query("INSERT INTO `guest` (first_name, last_name, contactno, email) VALUES ('$firstname', '$lastname', '$phone', '$email')") or die(mysqli_error());
+
+	$idUser = mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$_SESSION[username]';");
+                $idUserFetch = mysqli_fetch_array($idUser);
+                $idUserInput = $idUserFetch['id'];
+
+	$koneksi->query("INSERT INTO `guest` (first_name, last_name, contactno, email, id_user) VALUES ('$firstname', '$lastname', '$phone', '$email', '$idUserInput')") or die(mysqli_error());
 	$query = $koneksi->query("SELECT * FROM `guest` WHERE `first_name` = '$firstname' && `last_name` = '$lastname' && `contactno` = '$phone' && `email` = '$email'") or die(mysqli_error());
 	$fetch = $query->fetch_array();
 	$query2 = $koneksi->query("SELECT * FROM `transaction` WHERE `checkin` = '$checkin' && `checkout` = '$checkout' && `room_id` = '$_REQUEST[room_id]'") or die(mysqli_error());
@@ -40,7 +45,8 @@ if (isset($_POST['add_guest'])){
                 $hargaFetch = mysqli_fetch_array($hargaQuery);
                 $hargaResult = $hargaFetch['price'];
 				$totalInput = $hargaResult * $hari;
-				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email, hari_menginap, hargaKamar) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email', '$hari', '$totalInput')") or die(mysqli_error());
+				
+				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email, hari_menginap, hargaKamar, id_user) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email', '$hari', '$totalInput', '$idUserInput')") or die(mysqli_error());
 				$last_id = mysqli_insert_id($koneksi);
 				header("location: transaksi.php?transaction_id=$last_id&room_id=$room_id");
 			}else{

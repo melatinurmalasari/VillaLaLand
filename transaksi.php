@@ -1,4 +1,4 @@
-<?php session_start() ?>
+<?php include "koneksi.php"; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,18 +20,48 @@
 
 
   <main>
-    <section class="billing pt-120">
-      <br><br><br><br><br><br><br><br><br>
-      <div class="container">
-        <div class="card text-center h-100">
-        <h1 class="card-title">Terimakasih</h1>
-        <p class="card-text">Selamat menikmati kamar yang telah dipesan.</p>
-        <a href="dasboard.php" class="btn btn-primary fw-semibold rounded-pill w-100">Kembali ke halaman awal</a>
+    <br><br><br><br><br><br><br>
+    <section>
+      <?php 
+      $roomInput = $_GET['room_id'];
+      $transactionInput = $_GET['transaction_id'];
+      $query = $koneksi->query("SELECT hargaKamar, hargaKamar DIV 100 * 5 AS pajak FROM `transaction` WHERE room_id = $roomInput AND transaction_id = $transactionInput
+        ") or die(mysql_error()); 
+      while($fetch = $query->fetch_array()){
+        ?>
+     <form method="post">
+       <div class="container">
+        <div class="col-sm-12 col-md-4">
+            <h3>The Total Amount</h3>
+            <div class="d-flex justify-content-between">
+              <p>Amount Payable</p>
+              <p>Rp. <?= $fetch['hargaKamar']; ?></p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p>Shipping</p>
+              <p>Rp. <?= $fetch['pajak']; ?></p>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+              <b>The Total Amount of <br> (including VAT)</b>
+              <p>Rp. <?php $diBayar =  $fetch['hargaKamar'] + $fetch['pajak'];
+              echo $diBayar;?></p>
+            </div>
+            <br>
+            <input type="submit" name="yes" value="Konfirmasi" class="btn btn-primary fw-bold w-100">
+          </div>
       </div>
-      </div>
-      
+     </form>
+        <?php } ?>
     </section>
   </main>
+  <?php
+  if (isset($_POST['yes'])) { 
+     $koneksi->query("UPDATE `transaction` SET hargaTotal = '$diBayar' WHERE transaction_id = '$transactionInput'") or die(mysqli_error());
+     header("location: dasboard.php");
+   }
+
+  ?>
 
   <?php include "footer.php" ?>
 

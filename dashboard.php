@@ -136,6 +136,7 @@
                 <li class="list-group-item"><h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a></li>
               </ul>
             </div>
+          </div>
             <?php } ?>
           </div>
         </div>

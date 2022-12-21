@@ -62,30 +62,30 @@
         <div class="row g-4">
           <div class="col-md-6 col-sm-12">
             <div class=" card d-flex justify-content-center align-items-center p-5">
-              <img src="assets/img/bedroom.png" style="width : 30%; height : 30%;" alt="">
+              <img src="assets/img/bedroom.png" style="width : 20%; height : 20%;" alt="">
               <br><br>
-              <h3 style="font-weight: 500; font-size: 30px"><?php echo $fetch['bedroom'] ?></h3>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['bedroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="assets/img/bathroom.png" style="width : 31.5%; height : 31.5%;" alt="">
+              <img src="assets/img/bathroom.png" style="width : 21.5%; height : 21.5%;" alt="">
               <br><br>
-              <h3 style="font-weight: 500; font-size: 30px"><?php echo $fetch['bathroom'] ?></h3>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['bathroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="assets/img/wifi.png" style="width : 42.4%; height : 42.4%;" alt="">
+              <img src="assets/img/wifi.png" style="width : 32.4%; height : 32.4%;" alt="">
               <br><br>
-              <h3 style="font-weight: 500; font-size: 30px"><?php echo $fetch['wifi'] ?></h3>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['wifi'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="assets/img/pool.png" style="width : 30%; height : 30%;" alt="">
+              <img src="assets/img/pool.png" style="width : 23%; height : 23%;" alt="">
               <br><br>
-              <h3 style="font-weight: 500; font-size: 30px"><?php echo $fetch['pool'] ?></h3>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['pool'] ?></h3>
             </div>
           </div>
         </div>

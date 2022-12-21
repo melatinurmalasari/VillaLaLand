@@ -121,7 +121,15 @@
               <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
-                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <div class="row" style="margin-top: 5px;">
+                  <div class="d-flex col-md-1 justify-content-start" >
+                    <img src="assets/img/tool.png" alt="place"  style="width:20px; height:20px;">
+                  </div>
+                  <div class="col-lg" style="margin-left: -5px;" >
+                  <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                  </div>
+                </div> 
+                
                 <hr>
                 <p class="card-text">
                   <?php echo $fetch['description'] ?>
@@ -149,7 +157,7 @@
           </div>
         </div><br>
         <div class="line-white reveal"></div><br><br>
-        <div class="swiper px-8 reveal fade-bottom">
+        <div class="swiper px-10 reveal fade-bottom">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
               <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore

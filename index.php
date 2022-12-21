@@ -30,10 +30,10 @@
 				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+			<div class="headerfix collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="menufix navbar-nav mx-auto mb-2 mb-lg-0">
 				<li class="nav-item mx-2">
-					<a class="nav-link active fs-5" href="#home">Home</a>
+					<a class="nav-link fs-5" href="#home">Home</a>
 				</li>
 				<li class="nav-item mx-2">
 					<a class="nav-link fs-5" href="#tentangkami">About Us</a>
@@ -44,7 +44,7 @@
 				</ul>
 				<a href="login.php" class="text-decoration-none">
 				<div class="d-flex btn btn-primary p-3 rounded-pill justify-content-center align-items-center">
-					<span class="ms-3 text-primary fw-semibold">Log In/Register</span>
+					<span class="ms-3 fw-semibold" style="color: white;">Log In/Register</span>
 				</div>
 				</a>
 			</div>

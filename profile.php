@@ -57,9 +57,11 @@
                         </div>
                     </div>
                     `<?php } ?>
-                    <div class="col-md-4" style="margin-top: 50px;">
-                      <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
-                      <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
+                    <div class="d-flex col-md-5" style="margin-top: 50px;">
+                      <div class="ms-auto p-2">
+                        <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                        <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
+                      </div>
                     </div>
                   </div>
                     <div class="tab-book">

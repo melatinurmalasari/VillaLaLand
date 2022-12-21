@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item mx-2">
-            <a class="nav-link active fs-5" href="index.php">Home</a>
+            <a class="nav-link fs-5" href="index.php">Home</a>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link fs-5" href="destination2.php">Destination</a>
@@ -24,7 +24,7 @@
           while($fetch = $query->fetch_array()){
           ?>
           <div class="d-flex btn btn-primary rounded-pill justify-content-center align-items-center">
-            <span class="text-primary"><?php echo $fetch['username'] ?></span>
+            <span style="color : white ;"><?php echo $fetch['username'] ?></span>
           </div>
           <?php } ?>
         </a>

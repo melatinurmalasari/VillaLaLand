@@ -33,7 +33,7 @@ if (isset($_POST['add_guest'])){
 				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email')") or die(mysqli_error());
 				header("location:transaksi.php");
 			}else{
-				echo "<script>alert('Error Javascript Exception!')</script>";
+				echo "<script>alert('Silahkan masukkan data dengan benar!')</script>";
 			}
 		}	
 	}		

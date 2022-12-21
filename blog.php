@@ -21,46 +21,47 @@
   <main>
     <section class="blog pt-120">
       <div class="container">
-        <h1 class="fw-bold mb-5">Blog Page</h1><hr>
-        <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <a href="blog2.php" class="text-decoration-none">
+        <h1 class="fw-bold mb-5">Share Your Stay Experience With Us</h1>
+        <hr>
+        <div class="row" style="margin: 20px 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+            <a href="blog2.php" class="text-decoration-none" style="color:black;">
               <h2>Relax and feel the nature, <br> unforgattable view!</h2>
-            </a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </a>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="">
+          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>
-        <div class="row my-5">
-          <div class="col-sm-12 col-md-8">
-            <a href="blog2.php" class="text-decoration-none">
-              <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
-            </a>
-            <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <div class="row" style="margin: 20px 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+            <a href="blog2.php" class="text-decoration-none" style="color:black;">
+              <h2>Relax and feel the nature, <br> unforgattable view!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </a>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="">
+          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>
-        <div class="row my-5">
-          <div class="col-sm-12 col-md-8">
-            <a href="blog2.php" class="text-decoration-none">
-              <h2 class="text-dark">Relax and feel the nature, <br> unforgattable view!</h2>
-            </a>
-            <p class="fs-5 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        <div class="row" style="margin: 20px 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+            <a href="blog2.php" class="text-decoration-none" style="color:black;">
+              <h2>Relax and feel the nature, <br> unforgattable view!</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </a>
           </div>
-          <div class="col-sm-12 col-md-4">
-            <img src="assets/img/VillaCard1.png" class="d-block w-100" alt="">
+          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>

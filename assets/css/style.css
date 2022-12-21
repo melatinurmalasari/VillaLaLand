@@ -98,14 +98,42 @@ html{
 }
 
 .jumbotron{
-  background: url("../img/Hero.png");
+  background-image: url("../img/vila-1.png");
   background-size: cover;
   height: 800px;
   text-align: center;
   position: relative;
   font-weight: 500;
   z-index: 1;
+  background-position: center center;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 15s linear infinite 0s;
+  animation-timing-function: ease-in-out;
 }
+
+@keyframes slideBg{
+  0% {
+    background-image: url("../img/vila-1.png");
+  }
+
+  25% {
+    background-image: url("../img/vila-2.png");
+  }
+
+  50% {
+    background-image: url("../img/vila-3.png");
+  }
+
+  74% {
+    background-image: url("../img/vila-4.jpg");
+  }
+
+  100% {
+    background-image: url("../img/vila-5.jpg");
+  }
+}
+
 .jumbotron .container{
   position: relative;
   z-index: 1;
@@ -136,25 +164,24 @@ html{
 }
 
 /* blog */
-.blog{
-  margin-top: 150px;
-  text-align: left;
-}
-.blog h1{
+/* .blog{
+  text-align: center;
+} */
+/* .blog h1{
   font-size: 30px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 40px;
 }
 .blog h2{
 font-size: 25px;
-font-weight: 400;
+font-weight: bold;
 line-height: 20px;
-}
-.blog p{
+} */
+/* .blog p{
   font-size: 18px;
   line-height: 30px;
   margin-top: 25px;
-}
+} */
 
 .comment-guest{
   background-color: #4377A7;

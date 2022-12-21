@@ -65,10 +65,9 @@
         <div class="row align-items-center h-100">
           <div class="col-lg text-white">
             <h1 class="display-4">SUITS, SLEEP, SWEET</h1>
-            <p class="p-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat.
+            <p class="p-box">
+				Make your stay special vacation packages designed to let you dive in <br>
+              	and explore the very best of the Villa La Land website.
             </p>
             <a href="" class="btn btn-primary fw-bold rounded-pill">Book Now</a>
           </div>

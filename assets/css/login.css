@@ -56,7 +56,7 @@
     }
      
     .container .login-email .input-group input:focus, .container .login-email .input-group input:valid {
-        border-color: #a29bfe;
+        border-color: yellow !important;
     }
      
     .container .login-email .input-group .btn {

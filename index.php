@@ -39,7 +39,7 @@
 					<a class="nav-link fs-5" href="#tentangkami">About Us</a>
 				</li>
 				<li class="nav-item mx-2">
-					<a class="nav-link fs-5" href="#">Our Team</a>
+					<a class="nav-link fs-5" href="#location">Location</a>
 				</li>
 				</ul>
 				<a href="login.php" class="text-decoration-none">
@@ -114,7 +114,6 @@
 		</div>
 	</section>
 
-	
 	<section class="about mt-5" id="about">
 		<div class="container">
 			<h1 class="text-center reveal" style="margin:50px 0;">Why You Choose Us?</h1>
@@ -127,21 +126,21 @@
 								<div class="col-lg text-center">
 									<div class="borders">
 										<img src="assets/img/booked.png" alt="booking"  style="width:150px; height:150px;">
-									</div>
+									</div><br>
 									<h3>Easy Booking</h3>
 									<p>This booking process should include minimal steps</p>
 								</div>
 								<div class="col-lg text-center">
 									<div class="borders">
 									<img src="assets/img/responsibility.png" alt="" style="width:150px; height:150px;">
-									</div>
+									</div><br>
 									<h3>Responsibility</h3>
 									<p>You should be able to add rooms to your system</p>
 								</div>
 								<div class="col-lg text-center">
 									<div class="borders">
 									<img src="assets/img/share.png" alt="" style="width:150px; height:150px;">
-									</div>
+									</div><br>
 									<h3>Friendly Interface</h3>
 									<p>A villa booking engine with a good user friendly</p>
 								</div>
@@ -154,7 +153,7 @@
 			</section>
 		
 		<!-- maps -->
-		<div class="container mt-5 reveal">
+		<div class="container mt-5 reveal" id="location">
 			<h1 class="judul text-center mb-5" style="margin:100px 0;">Find Us</h3>
 			<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 300px">
 				<iframe
@@ -204,6 +203,7 @@
 	</script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
 	<script>
 		const navbar = document.querySelector('.navbar');
 		window.onscroll = () => {

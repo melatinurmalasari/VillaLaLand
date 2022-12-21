@@ -24,7 +24,7 @@
           while($fetch = $query->fetch_array()){
           ?>
           <div class="d-flex btn btn-primary rounded-pill justify-content-center align-items-center">
-            <span class="text-primary fw-semibold"><?php echo $fetch['username'] ?></span>
+            <span class="text-primary"><?php echo $fetch['username'] ?></span>
           </div>
           <?php } ?>
         </a>

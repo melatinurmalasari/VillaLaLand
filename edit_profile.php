@@ -75,7 +75,6 @@
     <section class="hero-profile">
         <div class="row">
             <div class="col-lg">
-                  <img class="page-header card-img-top " src="https://i.imgur.com/8RKXAIV.jpg" alt="Card image cap">
                   <div class="container">
                   <div class="row little-profile">
                         <div class="col-md-2 profile-pic">
@@ -90,9 +89,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-2 pro-img">                        
-                          <img class="rounded-circle" src="https://i.imgur.com/8RKXAIV.jpg" style="width: 180px; height: 180px">
-                        </div> -->
                         <h2 class="col-md-2" style="margin: 20px; font-weight: 600;">Edit Profile</h2>
                     </div>
                   

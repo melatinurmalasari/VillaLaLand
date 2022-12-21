@@ -21,12 +21,18 @@
 
   <main>
     <section class="billing pt-120">
-      <br><br><br><br><br><br><br><br><br>
+      <br><br><br><br>
       <div class="container">
-        <div class="card text-center h-100">
-        <h1 class="card-title">Terimakasih</h1>
-        <p class="card-text">Selamat menikmati kamar yang telah dipesan.</p>
-        <a href="dasboard.php" class="btn btn-primary fw-semibold rounded-pill w-100">Kembali ke halaman awal</a>
+        <div class="card text-center h-100" style="padding: 50px;">
+          <center>
+          <img src="assets/img/hands.png" alt="" style="width: 150px;">
+          </center>
+          <br>
+          <center>
+          <h1 class="card-title">Terimakasih</h1>
+          <p class="card-text">Selamat menikmati kamar yang telah dipesan.</p><br>
+          <a href="dasboard.php" class="btn btn-primary fw-semibold rounded-pill w-40">Kembali ke halaman awal</a>
+          </center>
       </div>
       </div>
       

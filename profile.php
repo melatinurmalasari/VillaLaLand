@@ -30,65 +30,79 @@
     <section class="hero-profile">
         <div class="row">
             <div class="col-lg">
-            <img class="page-header card-img-top " src="https://i.imgur.com/8RKXAIV.jpg" alt="Card image cap">
-                  <div class="container">
-                      <div class="row little-profile">
-                        <div class="col-md-2 profile-pic">
-                              <div class="avatar-upload">
-                                  <div class="avatar-preview">
-                                      <div id="imagePreview" style="background-image: url('https://i.imgur.com/8RKXAIV.jpg');">
-                                      </div>
+              <div class="container">
+                  <div class="row little-profile" style ="background: rgba(0, 142, 255, 0.3);">
+                    <div class="col-md-2 profile-pic">
+                          <div class="avatar-upload">
+                              <div class="avatar-preview">
+                                  <div id="imagePreview" style="background-image: url('https://i.imgur.com/8RKXAIV.jpg');">
                                   </div>
                               </div>
                           </div>
-                          <?php
-                          require_once 'koneksi.php';
-                          $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
-                          while($fetch = $query->fetch_array()){
-                            ?>
-                        <div class="col-md-4" style="margin: 20px; ">
-                            <h2 style="font-weight: 600;"><?php echo $fetch['username'] ?></h2>
-                            <p><?php echo $fetch['kota'] ?></p> 
-                        </div>
-                        `<?php } ?>
-                        <div class="col-md-4" style="margin-top: 50px;">
-                          <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
-                        </div>
-                        <div class="col-md-4" style="margin-top: 50px;">
-                          <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
-                        </div>
                       </div>
-                        <div class="tab-book">
-                          <button class="tablinks" onclick="openCity(event, 'current-book')">Current Booking</button>
-                          <button class="tablinks" onclick="openCity(event, 'book-history')">Booking History</button>
-                        </div>
-
-                        <div id="current-book" class="tabcontent">
-                          <center>
-                          <div class="booking">
-                            <h5>No Booked Yet</h5>
-                            <p>Anything you booked shows up here, but it seems like you haven’t made any. Let’s create one via destination page!</p>
-                            <a href="destination2.php" class="btn btn-secondary rounded-pill" data-abc="true">Make a Villa Reservation</a>
-                          </div> 
-                          </center>
-                          
-                        </div>
-
-                        <div id="book-history" class="tabcontent">
-                          <center>
-                            <div class="card secondary w3-hover-shadow w3-padding-8" style="width:80%">
-                              <div class="card-body">
-                                <h2 class="card-title">Ubud Bali Resort</h2>
-                                <p class="card-text">Check In : 2022-12-03</p>
-                                <p class="card-text">Check Out : 2022-12-05</p>
-                                <a href="#" class="btn btn-primary rounded">Book Again</a>
-                              </div>
-                            </div>
-                          </center>
+                      <?php
+                      require_once 'koneksi.php';
+                      $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
+                      while($fetch = $query->fetch_array()){
+                        ?>
+                    <div class="col-md-4" style="margin: 20px; ">
+                        <h1 style="font-weight: 600; padding-bottom : 10px;"><?php echo $fetch['username'] ?></h1>
+                        <div class="row">
+                          <div class="col-md-2" >
+                            <img src="assets/img/tool.png" alt="place"  style="width:30px;">
+                          </div>
+                          <div class="col-lg">
+                            <h4 style="font-weight: 500; font: size 50px; margin-left: -40px;"><?php echo $fetch['kota'] ?></h4> 
+                          </div>
                         </div>
                     </div>
+                    `<?php } ?>
+                    <div class="col-md-4" style="margin-top: 50px;">
+                      <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                      <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
+                    </div>
                   </div>
-                
+                    <div class="tab-book">
+                      <button class="tablinks" onclick="openCity(event, 'current-book')">Current Booking</button>
+                      <button class="tablinks" onclick="openCity(event, 'book-history')">Booking History</button>
+                      <button class="tablinks" onclick="openCity(event, 'our-blog')">Blog</button>
+                    </div>
+
+                    <div id="current-book" class="tabcontent">
+                      <center>
+                      <div class="booking">
+                        <h5>No Booked Yet</h5>
+                        <p>Anything you booked shows up here, but it seems like you haven’t made any. Let’s create one via destination page!</p>
+                        <a href="destination2.php" class="btn btn-primary rounded" data-abc="true">Make a Villa Reservation</a>
+                      </div> 
+                      </center>
+                    </div>
+
+                    <div id="book-history" class="tabcontent">
+                      <center>
+                        <div class="card secondary w3-hover-shadow w3-padding-8" style="width:80%">
+                          <div class="card-body">
+                            <h2 class="card-title">Ubud Bali Resort</h2>
+                            <p class="card-text">Check In : 2022-12-03</p>
+                            <p class="card-text">Check Out : 2022-12-05</p>
+                            <a href="#" class="btn btn-primary rounded">Book Again</a>
+                          </div>
+                        </div>
+                      </center>
+                    </div>
+
+                    <div id="our-blog" class="tabcontent">
+                      <center>
+                      <div class="blog">
+                        <h5>Oops!</h5>
+                        <h5>No Blog Yet</h5>
+                        <p>You haven't created a blog yet, let's create yours now!</p>
+                        <a href="destination2.php" class="btn btn-primary rounded" data-abc="true">Create Your Blog</a>
+                      </div> 
+                      </center>
+                    </div>
+                </div>
+              </div>       
         </div>
     </section>
   

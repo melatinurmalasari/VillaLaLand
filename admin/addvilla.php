@@ -17,7 +17,7 @@
 	<br/>
 	<h3>ADD VILLA</h3>
 
-		<form method="post" action="addvilla.php?">
+		<form method="post" action="tambah_aksi.php">
 			<table>
 				<tr>
 					<td>Photo</td>
@@ -57,37 +57,14 @@
 				</tr>
 				<tr>
 					<td></td>
-					<td><input type="submit" value="submit"></td>
+					<td><input type="submit" name="submit" value="Add data"></td>
 				</tr>		
 			</table>
 		</form>
 
 		<?php
-		if (isset($_POST['submit'])){
-			$photo = $_POST['photo'];
-			$room_name = $_POST['room_name'];
-			$room_place = $_POST['room_place'];
-			$price = $_POST['price'];
-			$bedroom = $_POST['bedroom'];
-			$bathroom = $_POST['bathroom'];
-			$wifi = $_POST['wifi'];
-			$pool = $_POST['pool'];
-			$description = $_POST['description'];
 
-			include_once("koneksi.php");
-
-			// update data ke database
-			$result = mysqli_query($koneksi,"INSERT INTO room(photo, room_name, room_place, price, bedroom, bathroom, wifi, pool, description) VALUES
-			('$photo', '$room_name', '$room_place', '$price', '$bedroom', '$bathroom', '$wifi', '$pool', '$description' ");
-    
-			if($result){
-				echo "BERHASIL";
-				header("location:villabooking.php");
-			}else{
-				echo "GAK";
-			}
-		}
-	
+		
 		?>
  
 </body>

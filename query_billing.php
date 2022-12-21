@@ -30,8 +30,19 @@ if (isset($_POST['add_guest'])){
 		}else{	
 			if($guest_id = $fetch['guest_id']){
 				$room_id = $_REQUEST['room_id'];
-				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email')") or die(mysqli_error());
-				header("location:transaksi.php");
+				$dateCheckin = $checkin;
+				$dateCheckout = $checkout;
+				$timeStampCheckin = strtotime($checkin);
+				$timeStampCheckout = strtotime($checkout);
+				$hitungHari = $timeStampCheckout - $timeStampCheckin;
+				$hari = $hitungHari/(24*60*60);
+				$hargaQuery = mysqli_query($koneksi, "SELECT price FROM `room` WHERE room_id = $room_id;");
+                $hargaFetch = mysqli_fetch_array($hargaQuery);
+                $hargaResult = $hargaFetch['price'];
+				$totalInput = $hargaResult * $hari;
+				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email, hari_menginap, hargaKamar) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email', '$hari', '$totalInput')") or die(mysqli_error());
+				$last_id = mysqli_insert_id($koneksi);
+				header("location: transaksi.php?transaction_id=$last_id&room_id=$room_id");
 			}else{
 				echo "<script>alert('Silahkan masukkan data dengan benar!')</script>";
 			}

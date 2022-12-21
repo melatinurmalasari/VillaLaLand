@@ -1,3 +1,5 @@
+<?php
+$idInput = $_GET['room_id']; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +15,6 @@
 
 <body>
   <?php include "header.php" ?>
-
   <main>
     <section class="billing pt-120">
       <div class="container">

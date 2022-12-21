@@ -58,7 +58,7 @@
   <?php
   if (isset($_POST['yes'])) { 
      $koneksi->query("UPDATE `transaction` SET hargaTotal = '$diBayar' WHERE transaction_id = '$transactionInput'") or die(mysqli_error());
-     header("location: dasboard.php");
+     header("location: dashboard.php");
    }
 
   ?>

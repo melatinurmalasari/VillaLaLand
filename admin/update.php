@@ -28,6 +28,5 @@ if(isset($_POST['update'])){
         echo "ya";
     }
 }
-
-
+ 
 ?>

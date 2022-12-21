@@ -68,7 +68,7 @@
                 <td><?php echo $data['description'] ?></td>
                 <td>
                     <a href="tampilById.php?room_id=<?php echo $data['room_id'] ?>">Detail</a>
-                    <a href="edit.php?room_id=$room_id">Edit</a>
+                    <a href="edit.php?room_id=<?= $data['room_id'] ?>">Edit</a>
                     <a href="delete.php?room_id=<?php echo $data['room_id']?>">Delete</a>
                 </td>
                 

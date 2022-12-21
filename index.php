@@ -64,11 +64,11 @@
       <div class="container">
         <div class="row align-items-center h-100">
           <div class="col-lg text-white">
-            <h1 class="display-4">SUITS, SLEEP, SWEET</h1>
-            <p class="p-box">
+            <h1 class="display-4">SUITS • SLEEP • SWEET</h1>
+            <h5 class="p-box">
 				Make your stay special vacation packages designed to let you dive in <br>
               	and explore the very best of the Villa La Land website.
-            </p>
+			</h5>
             <a href="" class="btn btn-primary fw-bold rounded-pill">Book Now</a>
           </div>
         </div>
@@ -77,24 +77,25 @@
     <!-- end jumbotron -->
 
 	<section class="about mt-5 pt-5" id="tentangkami">
-		<div class="container h-100">
+		<div class="container h-100 reveal">
 			<div class="row h-100 gx-5">
 				<div class="col-6 d-flex flex-column justify-content-center">
-					<img src="assets/img/vilaaaaa.png"
+					<img src="assets/img/vilaaa.png"
 						alt="About Villa La Land" class="img-fluid p-5">
 				</div>
 				<div class="col-6 d-flex flex-column justify-content-center">
 					<h2>About Us</h2>
 					<p>
-					Our website always works professionally by providing the best for users in order to give users a sense of security, comfort and satisfaction with the services of our website.
-
-We want to help recommend the best tourist attractions for your family, friends, or your partner. By sharing insights from experienced users, you can find interesting and interesting tourist attractions.
-					</p>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod excepturi blanditiis est
-						laboriosam mollitia! Ad nisi quibusdam deleniti, nostrum ipsam, accusantium reiciendis
-						dolorum dolore error, architecto sit nihil maiores? Vel quae error natus accusantium!
-					</p>
-					<span><a href="#about" class="btn btn-primary px-3 mt-4 fw-bold">About Villa La Land</a></span>
+					Our website always works professionally by providing the best for users in order to give users a sense of security, 
+					comfort and satisfaction with the services of our website.
+					<span id="dots">...</span><span id="more"> 
+					<br>
+					We want to help recommend the best tourist attractions for your family, friends, or your partner. 
+					By sharing insights from experienced users, you can find interesting and interesting tourist attractions.
+					We also present villas for lodging during your trip. There are many choices of villas available around Indonesia. 
+					You can easily book a villa from this website, enjoy your holiday and have a nice stay at our recommended villa!
+					</span></p>
+					<button onclick="myFunction()" id="myBtn" class="btn btn-primary px-3 mt-4 fw-bold">Read more</button>
 				</div>
 			</div>
 		</div>
@@ -103,7 +104,7 @@ We want to help recommend the best tourist attractions for your family, friends,
 	<section class="film">
 		<div class="container p-5">
 			<div class="row p-5">
-				<div class="col p-5 bg-warning shadow shadow-lg">
+				<div class="col p-5 bg-primary shadow shadow-lg">
 					<iframe width="100%" height="500" src="https://www.youtube.com/embed/Fez9jsONpRE"
 						title="YouTube video player" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -112,82 +113,87 @@ We want to help recommend the best tourist attractions for your family, friends,
 			</div>
 		</div>
 	</section>
-		
-		<!-- maps -->
-	<div class="container mt-5">
-		<h1 class="judul text-center mb-5">Temukan kami</h3>
-		<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-			<iframe
-			src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. A. Yani No.212c, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-			width="100%"
-			height="450"
-			style="border: 0"
-			allowfullscreen=""
-			loading="lazy"
-			></iframe>
-		</div>
-		</div>
-	</div>
-    <!-- akhir maps-->
 
-	<section class="about mt-5 pt-5" id="about">
-		<div class="container h-100">
+	
+	<section class="about mt-5" id="about">
+		<div class="container">
+			<h1 class="text-center reveal" style="margin:50px 0;">Why You Choose Us?</h1>
 			<div class="row h-100 gx-5">
-				<section class="about">
-						<div class="container h-100">
-							<div class="row h-100 d-flex align-items-center">
-								<div class="col-xl-4 mb-3">
-									<div class="card">
-										<div class="card-header py-3">
-											<h5 class="text-center"><strong>Keunggulan 1</strong></h5>
-										</div>
-										<div class="card-body">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-										</div>
+				<section class="about reveal">
+					<div class="container h-200">
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="row reveal">
+								<div class="col-lg text-center">
+									<div class="borders">
+										<img src="assets/img/booked.png" alt="booking"  style="width:150px; height:150px;">
 									</div>
+									<h3>Easy Booking</h3>
+									<p>This booking process should include minimal steps</p>
 								</div>
-								<div class="col-xl-4">
-									<div class="card">
-										<div class="card-header py-3">
-											<h5 class="text-center"><strong>Keunggulan 2</strong></h5>
-										</div>
-										<div class="card-body">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-										</div>
+								<div class="col-lg text-center">
+									<div class="borders">
+									<img src="assets/img/responsibility.png" alt="" style="width:150px; height:150px;">
 									</div>
+									<h3>Responsibility</h3>
+									<p>You should be able to add rooms to your system</p>
 								</div>
-								<div class="col-xl-4">
-									<div class="card">
-										<div class="card-header py-3">
-											<h5 class="text-center"><strong>Keunggulan 3</strong></h5>
-										</div>
-										<div class="card-body">
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-											Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vel neque laboriosam
-											assumenda inventore sint dolorum exercitationem repellendus, laborum sunt quidem
-											distinctio, dolore maiores laudantium. Dicta facere culpa ex tenetur!
-										</div>
+								<div class="col-lg text-center">
+									<div class="borders">
+									<img src="assets/img/share.png" alt="" style="width:150px; height:150px;">
 									</div>
+									<h3>Friendly Interface</h3>
+									<p>A villa booking engine with a good user friendly</p>
 								</div>
 							</div>
+							</div>
 						</div>
-					</section>
+						</div>
+					</div>
 				</section>
+			</section>
+		
+		<!-- maps -->
+		<div class="container mt-5 reveal">
+			<h1 class="judul text-center mb-5" style="margin:100px 0;">Find Us</h3>
+			<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 300px">
+				<iframe
+				src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Jl. A. Yani No.212c, Mendungan, Pabelan, Kec. Kartasura, Kabupaten Sukoharjo, Jawa Tengah 57161&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+				width="100%"
+				height="450"
+				style="border: 0"
+				allowfullscreen=""
+				loading="lazy"
+				></iframe>
+			</div>
+			</div>
+		</div>
+		<!-- akhir maps-->
+
 		<?php include "footer.php" ?>
 
 	</main>
+
+	<script src="scripts/navbar.js"></script>
+	<script src="scripts/reveal.js"></script>
+
+	<script>
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more"; 
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less"; 
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
 
 	<!-- Option 2: Separate Popper and Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

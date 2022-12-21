@@ -163,25 +163,11 @@ html{
   align-items: center;
 }
 
-/* blog */
-/* .blog{
-  text-align: center;
-} */
-/* .blog h1{
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 40px;
+/* read-more */
+#more {
+  display: none;
 }
-.blog h2{
-font-size: 25px;
-font-weight: bold;
-line-height: 20px;
-} */
-/* .blog p{
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 25px;
-} */
+
 
 .comment-guest{
   background-color: #4377A7;
@@ -396,12 +382,12 @@ html body .m-t-10 {
 }
 
 .bg-primary {
-  background: #4377A7 !important;
+  background: #1962a7!important;
 }
 
 .btn-primary {
-  background: #F4E379 !important;
-  color: #4377A7 !important;
+  background: #fe466a  !important;
+  color: white !important;
   border: none !important;
   outline: none !important;
   padding: 16px 32px;
@@ -419,7 +405,7 @@ html body .m-t-10 {
 }
 
 .navbar-brand {
-  height: 100px;
+  height: 80px;
 }
 
 .nav-link:hover {
@@ -437,7 +423,7 @@ html body .m-t-10 {
   flex-grow: 0;
   width: 100%;
   background: #4377A7;
-  margin: 56px 0;
+  margin: 30px 0;
 }
 .footer-villa p{
   color: white;

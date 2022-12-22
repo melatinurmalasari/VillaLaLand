@@ -315,10 +315,13 @@ html body .m-t-10 {
   margin-top: 20px;
 }
 
+.tab-book button:hover {
+  background-color: #f8cc67;
+}
+
 /* Style the buttons inside the tab */
 .tab-book button {
   background-color: #ffe5a9;;
-  
   float: left;
   border: none;
   outline: none;
@@ -326,13 +329,13 @@ html body .m-t-10 {
   padding: 14px 16px;
   transition: 0.3s;
   font-size: 17px;
-  color: #f1a198;
+  color: #f7887b;
   font-weight: 600;
   
 }
 
 /* Create an active/current tablink class */
-.tab button.active {
+.tab-book button.active {
   background-color: #f8cc67;
 }
 

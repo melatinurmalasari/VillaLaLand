@@ -17,9 +17,8 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="villabooking.php">Booking Villa</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Customers</a>
-              </li>
+              </div>
+              </a>
           </div>
         </div>
       </div>

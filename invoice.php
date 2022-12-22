@@ -207,6 +207,7 @@ background-color: #f7f7ff;
     <title>Invoice</title>
   </head>
   <body>
+
     <br><br><br><br><br><br>
     <div class="container">
     <div class="card">
@@ -284,8 +285,20 @@ background-color: #f7f7ff;
                             <div class="thanks">Thank you!</div>
                     </div>
                 </div>
+                <form method="POST">
+                    <input type="submit" name="continue" value="Done!" class="btn btn-primary fw-bold w-100">
+                </form>
             </div>
         </div>
     </div>
 </div>
+<?php
+  if (isset($_POST['continue'])) { 
+     $koneksi->query("UPDATE `transaction` SET status = 'COMPLETE' WHERE transaction_id = '$transactionInput'") or die(mysqli_error());
+     header("location: dashboard.php");
+   }
+
+  ?>
+
+<?php include 'footer.php'; ?>
 </html>

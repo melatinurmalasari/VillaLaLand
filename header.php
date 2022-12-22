@@ -1,12 +1,15 @@
 <?php
 require_once 'koneksi.php';
 session_start();
+ob_start();
 $username = $_SESSION['username'];
 $idUser = mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$username';");
 $idUserFetch = mysqli_fetch_array($idUser);
 $idUserInput = $idUserFetch['id'];
+$userPemesan =  mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$username';");
 if (!isset($_SESSION['username'])){
   header("Location: login.php");
+  ob_end_flush();
 }
 ?>
 

@@ -20,12 +20,44 @@
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
+
+  <script type="text/javascript">
+    const showInfo = (value) => {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        alert(this.responseText)
+      }
+      var id = value
+      xhttp.open("POST", "action.php?aksi=info");
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhttp.send("id=" + id)
+    }
+
+    const deleteData = (value) => {
+      const xhttp = new XMLHttpRequest();
+      xhttp.onload = function() {
+        alert(this.responseText)
+      }
+      var id = value
+      xhttp.open("POST", "action.php?aksi=delete");
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      let con = confirm("Apakah anda yakin ingin menghapus data?")
+      if (con) {
+        xhttp.send("id=" + id)
+      }
+    }
+  </script>
 
 </head>
 
 <body>
   <?php include "header.php" ?>
-
+  <?php 
+$idTransaksi = mysqli_query($koneksi, "SELECT transaction_id FROM `transaction` WHERE id_user = '$idUserInput';");
+$idTransaksiFetch = mysqli_fetch_array($idTransaksi);
+$idTransaksiInput = $idTransaksiFetch['transaction_id'];
+?>
   <main>
     <section class="hero-profile">
         <div class="row">
@@ -49,7 +81,8 @@
                             <h2 style="font-weight: 600;"><?php echo $username ?></h2>
                             <p><?php echo $fetch['kota'] ?></p> 
                     </div>
-                        `<?php } ?>
+                        <?php } ?>
+
                         
                         <div class="d-flex col-md-5 justift-between-end" style="margin-top: 40px;">
                             <div class="ms-auto p-2">
@@ -61,7 +94,6 @@
                               </div>
                             </form>
                           </div>
-                   
                   </div>
                     <div class="tab-book">
                       <button class="tablinks" onclick="openCity(event, 'current-book')" id="defaultOpen">Current Booking</button>
@@ -69,13 +101,63 @@
                       <button class="tablinks" onclick="openCity(event, 'our-blog')">Blog</button>
                     </div>
 
+                   
                     <div id="current-book" class="tabcontent">
                       <center>
-                      <div class="booking">
-                        <h5>No Booked Yet</h5>
-                        <p>Anything you booked shows up here, but it seems like you haven’t made any. Let’s create one via destination page!</p>
-                        <a href="destination2.php" class="btn btn-primary rounded" data-abc="true">Make a Villa Reservation</a>
-                      </div> 
+                        <div class="booking">
+                         <?php
+                         $query = mysqli_query($koneksi, "SELECT room.room_name, transaction.first_name, transaction.checkin, transaction.checkout, transaction.status FROM transaction INNER JOIN room ON transaction.room_id=room.room_id WHERE first_name = '$username';");
+                         ?>
+                         <table style="width: 100%;" class="display" id="tabel-data">
+                          <thead>
+                            <tr>
+                              <th>Nama Pemesan</th>
+                              <th>Nama Villa</th>
+                              <th>Check In</th>
+                              <th>Check Out</th>
+                              <th>Status</th>
+                              <th>Aksi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <?php
+                            while ($item = mysqli_fetch_array($query)) {
+                              ?>
+
+                              <tr>
+                                <td><?= $item['first_name'] ?></td>
+                                <td><?= $item['room_name'] ?></td>
+                                <td><?= $item['checkin'] ?></td>
+                                <td><?= $item['checkout'] ?></td>
+                                <td><?= $item['status'] ?></td>
+                                <form method="POST">
+                                  <td>
+                                  <input type="submit" name="refund" value="Refund" class="btn btn-primary fw-bold">
+                                  <input type="submit" name="cancel" value="Cancel" class="btn btn-primary fw-bold">
+                                </td>
+                                </form>
+                              </tr>
+
+                              <?php
+                              ob_start();
+                              if (isset($_POST['refund'])) { 
+                               $koneksi->query("UPDATE `transaction` SET status = 'PENDING' WHERE first_name = '$username' AND transaction_id = '$idTransaksiInput'") or die(mysqli_error());
+                               header("location: profile.php");
+                               ob_end_flush();
+                             }
+                             ?>
+                             <?php
+                             ob_start();
+                             if (isset($_POST['cancel'])) { 
+                               $koneksi->query("UPDATE `transaction` SET status = 'COMPLETE' WHERE first_name = '$username' AND transaction_id = '$idTransaksiInput'") or die(mysqli_error());
+                               header("location: profile.php");
+                               ob_end_flush();
+                             }
+
+                             ?>
+                            <?php } ?>
+                          </tbody>
+                        </table>
                       </center>
                     </div>
 
@@ -102,6 +184,7 @@
                       </div> 
                       </center>
                     </div>
+                  
                 </div>
               </div>       
         </div>
@@ -128,6 +211,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#tabel-data').DataTable({
+          order: [
+            [2, 'desc']
+            ],
+          info: false,
+          searching: false
+        });
+      });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

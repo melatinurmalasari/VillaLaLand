@@ -19,8 +19,8 @@
     <section class="destinations pt-120">
       <div class="container">
         <div class="row gx-5">
-          <div class="col-12 d-flex align-items-center justify-content-center mb-3 text-center">
-            <h1 class="fw-bold">Find Your Perfect Villa in Villa La Land</h1>
+          <div class="col-12 d-flex align-items-center justify-content-center mb-3 text-center ">
+            <h1 class="fw-bold" style="margin-top: 60px;">Find Your Perfect Villa <br> in <span style="color:#f1a198;">Villa La Land</span></h1>
           </div>
           <hr>
           <?php
@@ -30,7 +30,7 @@
           ?>
           <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="cat-card card shadow shadow-md rounded-4 p-4 h-100" style="border: none !important;">
-              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
+              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" style="width:100%; height:100%" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
                 <div class="row" style="margin-top: 5px;">
@@ -40,16 +40,11 @@
                   <div class="col-lg" style="margin-left: -5px;" >
                     <p class="card-title"><?php echo $fetch['room_place'] ?></p>
                   </div>
+                  <ul class="list-group list-group-flush" >
+                    <li class="list-group-item"><h5 class="mb-4" >Rp. <?php echo $fetch['price'] ?> / Day</h5><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a></li>
+                  </ul>
                 </div>  
-                <hr>
-                <p class="card-text">
-                  <?php echo $fetch['description'] ?>
-                </p>
-                <br>
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a></li>
-              </ul>
             </div>
           </div>
           <?php } ?>

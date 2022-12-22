@@ -67,11 +67,7 @@
           </div>
         </div>
         <hr>
-        <div class="row" style="margin: 50px 0;">
-          <div class="col text-center">
-            <a href="" class="btn btn-primary mt-5">Load More Blog</a>
-          </div>
-        </div>
+     
       </div>
     </section>
     

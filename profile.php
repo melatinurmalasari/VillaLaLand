@@ -31,7 +31,7 @@
         <div class="row">
             <div class="col-lg">
               <div class="container">
-                  <div class="row little-profile" style ="background: rgba(0, 142, 255, 0.3);">
+                  <div class="row little-profile" style ="background: rgba(239, 181, 167, 0.3);">
                     <div class="col-md-2 profile-pic">
                           <div class="avatar-upload">
                               <div class="avatar-preview">

@@ -56,9 +56,9 @@
             <div class="card bg-primary p-md-4 p-sm-0">
               <div class="row m-4 p-md-4 p-sm-0">
                 <div class="col-12 mb-3">
-                  <h1 class="text-center text-white">Search for Your Villa</h1>
+                  <h1 class="text-center text-white">Tolong nanti di ganti jadi kata-kata pemanis ya.</h1>
                 </div>
-                <div class="col-md-6 col-sm-12 mb-3">
+                <!-- <div class="col-md-6 col-sm-12 mb-3">
                   <input type="text" class="form-control" placeholder="Check In">
                 </div>
                 <div class="col-md-6 col-sm-12 mb-3">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-12">
                   <a href="destination2.php" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

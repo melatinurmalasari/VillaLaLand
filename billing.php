@@ -18,7 +18,7 @@ $idInput = $_GET['room_id']; ?>
   <main>
     <section class="billing pt-120">
       <div class="container">
-      <div class="card  shadow shadow-md" style="margin:50px; padding:30px; ">
+      <div class="card  shadow shadow-md">
         <div class="card-body">
           <h1 class="text-center">Billing Details</h1><br>
           <div class="row gx-5">
@@ -48,6 +48,7 @@ $idInput = $_GET['room_id']; ?>
                     <label for="check-out">Check Out</label>
                     <input class="form-control" type="date" id="checkout" name="checkout" required>
                 </div>
+                <br>
                 <div class="col-12">
                 <input type="submit" name="add_guest" value="Next" class="btn btn-primary fw-bold w-100">
                 <?Php require_once 'query_billing.php' ?>

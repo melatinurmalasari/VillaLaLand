@@ -1,11 +1,12 @@
 <?php
 require_once 'koneksi.php';
-if (!isset($_SESSION)) {
-  session_start();
-  $username = $_SESSION['username'];
-  $idUser = mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$username';");
-                $idUserFetch = mysqli_fetch_array($idUser);
-                $idUserInput = $idUserFetch['id'];
+session_start();
+$username = $_SESSION['username'];
+$idUser = mysqli_query($koneksi, "SELECT id FROM `users` WHERE username = '$username';");
+$idUserFetch = mysqli_fetch_array($idUser);
+$idUserInput = $idUserFetch['id'];
+if (!isset($_SESSION['username'])){
+  header("Location: login.php");
 }
 ?>
 
@@ -30,17 +31,9 @@ if (!isset($_SESSION)) {
         </ul>
         <a href="profile.php" class="text-decoration-none">
           <div class="d-flex btn btn-primary rounded-pill justify-content-center align-items-center">
-<<<<<<< HEAD
-            <span style="color : white ;"><?php echo $fetch['username'] ?></span>
-=======
-            <span class="text-primary fw-semibold"><?php echo $username ?></span>
->>>>>>> eadcea2 (fix logic banyak)
+            <span style="color : white ;"><?php echo $username ?></span>
           </div>
         </a>
       </div>
     </div>
   </nav>
-
-  
-
-  

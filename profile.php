@@ -39,8 +39,6 @@
                                   </div>
                               </div>
                           </div>
-<<<<<<< HEAD
-=======
                           <?php
                           require_once 'koneksi.php';
                           $query = $koneksi->query("SELECT * FROM `users` WHERE id = $idUserInput") or die(mysql_error()); 
@@ -61,25 +59,7 @@
                             </div>
                           </form>
                         </div>
->>>>>>> eadcea2 (fix logic banyak)
                       </div>
-                      <?php
-                      require_once 'koneksi.php';
-                      $query = $koneksi->query("SELECT * FROM `users`") or die(mysql_error()); 
-                      while($fetch = $query->fetch_array()){
-                        ?>
-                    <div class="col-md-4" style="margin: 20px; ">
-                        <h1 style="font-weight: 600; padding-bottom : 10px;"><?php echo $fetch['username'] ?></h1>
-                        <div class="row">
-                          <div class="col-md-2" >
-                            <img src="assets/img/tool.png" alt="place"  style="width:30px;">
-                          </div>
-                          <div class="col-lg">
-                            <h4 style="font-weight: 500; font: size 50px; margin-left: -40px;"><?php echo $fetch['kota'] ?></h4> 
-                          </div>
-                        </div>
-                    </div>
-                    `<?php } ?>
                     <div class="d-flex col-md-5" style="margin-top: 50px;">
                       <div class="ms-auto p-2">
                         <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>

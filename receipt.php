@@ -50,7 +50,6 @@
             <br>
             <input type="submit" name="yes" value="Konfirmasi" class="btn btn-primary fw-bold w-100">
           </div>
->>>>>>> 82cf42bdf7184453125fb9a63a87f5956f34fe92:transaksi.php
       </div>
      </form>
         <?php } ?>

@@ -59,6 +59,11 @@ $idTransaksiFetch = mysqli_fetch_array($idTransaksi);
 $idTransaksiInput = $idTransaksiFetch['room_id'];
 ?>
   <main>
+    <?php
+    require_once 'koneksi.php';
+    $query = $koneksi->query("SELECT * FROM `users` WHERE id = $idUserInput") or die(mysql_error()); 
+    while($fetch = $query->fetch_array()){
+      ?>
     <section class="hero-profile">
         <div class="row">
             <div class="col-lg">
@@ -67,15 +72,11 @@ $idTransaksiInput = $idTransaksiFetch['room_id'];
                     <div class="col-md-2 profile-pic">
                           <div class="avatar-upload">
                               <div class="avatar-preview">
-                                  <div id="imagePreview" style="background-image: url('https://i.imgur.com/8RKXAIV.jpg');">
+                                  <div id="imagePreview" style="background-image: url('<?php $fetch['pp']; ?>');">
                                   </div>
                               </div>
                           </div>
-                          <?php
-                          require_once 'koneksi.php';
-                          $query = $koneksi->query("SELECT * FROM `users` WHERE id = $idUserInput") or die(mysql_error()); 
-                          while($fetch = $query->fetch_array()){
-                            ?>
+                          
                     </div>
                     <div class="col-md-4" style="margin: 20px; ">
                             <h2 style="font-weight: 600;"><?php echo $username ?></h2>
@@ -97,8 +98,6 @@ $idTransaksiInput = $idTransaksiFetch['room_id'];
                   </div>
                     <div class="tab-book">
                       <button class="tablinks" onclick="openCity(event, 'current-book')" id="defaultOpen">Current Booking</button>
-                      <button class="tablinks" onclick="openCity(event, 'book-history')">Booking History</button>
-                      <button class="tablinks" onclick="openCity(event, 'our-blog')">Blog</button>
                     </div>
 
                    
@@ -160,31 +159,6 @@ $idTransaksiInput = $idTransaksiFetch['room_id'];
                         </table>
                       </center>
                     </div>
-
-                    <div id="book-history" class="tabcontent">
-                      <center>
-                        <div class="card secondary w3-hover-shadow w3-padding-8" style="width:80%">
-                          <div class="card-body">
-                            <h2 class="card-title">Ubud Bali Resort</h2>
-                            <p class="card-text">Check In : 2022-12-03</p>
-                            <p class="card-text">Check Out : 2022-12-05</p>
-                            <a href="#" class="btn btn-primary rounded">Book Again</a>
-                          </div>
-                        </div>
-                      </center>
-                    </div>
-
-                    <div id="our-blog" class="tabcontent">
-                      <center>
-                      <div class="blog">
-                        <h5>Oops!</h5>
-                        <h5>No Blog Yet</h5>
-                        <p>You haven't created a blog yet, let's create yours now!</p>
-                        <a href="destination2.php" class="btn btn-primary rounded" data-abc="true">Create Your Blog</a>
-                      </div> 
-                      </center>
-                    </div>
-                  
                 </div>
               </div>       
         </div>

@@ -34,49 +34,20 @@
         </div>
       
         <hr>
+        <?php
+          require_once 'koneksi.php';
+          $query = $koneksi->query("SELECT * FROM `blog`") or die(mysql_error()); 
+          while($fetch = $query->fetch_array()){
+          ?>
         <div class="row" style="margin: 20px 0;">
           <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
             <a href="blog2.php" class="text-decoration-none" style="color:black;">
-              <h2>Relax and feel the nature, <br> unforgattable view!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <h2><?= $fetch['judul'] ?></h2>
+              <p><?= $fetch['text_blog'] ?></p>
             </a>
           </div>
-          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
-            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
-          </div>
-        </div>
         <hr>
-        <div class="row" style="margin: 20px 0;">
-          <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
-            <a href="blog2.php" class="text-decoration-none" style="color:black;">
-              <h2>Relax and feel the nature, <br> unforgattable view!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
-            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
-          </div>
-        </div>
-        <hr>
-        <div class="row" style="margin: 20px 0 0;">
-          <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
-            <a href="blog2.php" class="text-decoration-none" style="color:black;">
-              <h2>Relax and feel the nature, <br> unforgattable view!</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
-            <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
-          </div>
-        </div>
-        <hr>
-     
+     <?php } ?>
       </div>
     </section>
     

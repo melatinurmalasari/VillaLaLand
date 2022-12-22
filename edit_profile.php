@@ -81,6 +81,7 @@
     $gender = $item['gender'];
     $birth = $item['birth'];
     $email = $item['email'];
+    $pp = $item['imageUpload'];
 }
    ?>
   <main>
@@ -93,11 +94,11 @@
                         <div class="col-md-2 profile-pic">
                             <div class="avatar-upload">
                                 <div class="avatar-edit">
-                                    <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                    <input type='file' id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg" />
                                     <label for="imageUpload"></label>
                                 </div>
                                 <div class="avatar-preview">
-                                    <div id="imagePreview" style="background-image: url('https://i.imgur.com/8RKXAIV.jpg');">
+                                    <div id="imagePreview" style="background-image: url('<?php $item['pp'] ?>');">
                                     </div>
                                 </div>
                             </div>
@@ -135,7 +136,7 @@
                                     <div class="col-md-6"  style="margin-top:20px;">
                                         <label class="labels" style="font-weight: 500; font-size: 20px;">Birthdate</label>
                                         <div>
-                                            <input class="form-control" type="date" id="birth" name="birth" style="margin-top:10px;">
+                                            <input class="form-control" type="date" id="birth" name="birth" value="<?= $birth ?>" style="margin-top:10px;">
                                         </div>
                                     </div>
                                 </div>
@@ -157,6 +158,8 @@
     </section>
     </form>
 </main>
+
+?>
 
 <?php
 if(isset($_POST['update'])){

@@ -55,6 +55,7 @@ require_once('koneksi.php');
             <li class=" nav-item"><a class=" nav-link" href="villabooking.php">Villa</a></li>
             <li class=" nav-item"><a class=" nav-link" href="datacus.php">Transaksion</a></li>
           </ul>
+          <a href="logout_admin.php">Logout</a>
         </div>
       </div>
     </nav>

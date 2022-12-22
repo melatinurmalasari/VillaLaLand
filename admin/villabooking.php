@@ -31,21 +31,23 @@
         </div>
       </div>
     </section>
-    <table>
+    <table class="table caption-top">
         <thead>
             <tr>
-                <a href="addvilla.php">+Add Villa</a>
-                <td>No</td>
-                <td>Id Villa</td>
-                <td>Photo</td>  
-                <td>Villa name</td>
-                <td>Place</td>
-                <td>Price</td>
-                <td>Bedroom</td>
-                <td>Bathroom</td>
-                <td>wifi</td>  
-                <td>pool</td>  
-                <td>Description</td>                     
+                <caption>
+                <a href="addvilla.php" class="btn btn-light">+Add Villa</a></caption>
+                <th scope="col">No</th>
+                <th scope="col">Id Villa</th>
+                <th scope="col">Photo</th>  
+                <th scope="col">Villa name</th>
+                <th scope="col">Place</th>
+                <th scope="col">Price</th>
+                <th scope="col">Bedroom</th>
+                <th scope="col">Bathroom</th>
+                <th scope="col">wifi</th>  
+                <th scope="col">pool</th>  
+                <th scope="col">Description</th>
+                <th scope="col">#</th>                     
             </tr>
         </thead>
         <?php
@@ -67,9 +69,9 @@
                 <td><?php echo $data['pool'] ?></td>
                 <td><?php echo $data['description'] ?></td>
                 <td>
-                    <a href="tampilById.php?room_id=<?php echo $data['room_id'] ?>">Detail</a>
-                    <a href="edit.php?room_id=<?= $data['room_id'] ?>">Edit</a>
-                    <a href="delete.php?room_id=<?php echo $data['room_id']?>">Delete</a>
+                    <a href="tampilById.php?room_id=<?php echo $data['room_id'] ?>" class="btn btn-info">Detail</a>
+                    <a href="edit.php?room_id=<?= $data['room_id'] ?>" class="btn btn-success">Edit</a>
+                    <a href="delete.php?room_id=<?php echo $data['room_id']?>" class="btn btn-danger">Delete</a>
                 </td>
                 
             </tr>

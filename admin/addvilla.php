@@ -12,52 +12,61 @@
     <?php include "header.php" ?>
 
     <br/>
-	<a href="villabooking.php">BACK</a>
+	<a href="villabooking.php" class="btn btn-light">Back</a>
 	<br/>
 	<br/>
 	<h3>ADD VILLA</h3>
 
 		<form method="post" action="tambah_aksi.php">
 			<table>
-				<tr>
-					<td>Photo</td>
-					<td><input type="pic" name="photo" ></td>
-				</tr>
-				<tr>		
-					<td>Villa Name</td>
-					<td><input type="text" name="room_name" ></td>
-				</tr>
-				<tr>
-					<td>Place</td>
-					<td><input type="text" name="room_place" ></td>
-				</tr>
-				<tr>
-					<td>Price</td>
-					<td><input type="number" name="price" ></td>
-				</tr>
-                <tr>
-					<td>Bedroom</td>
-					<td><input type="text" name="bedroom" ></td>
-				</tr>
-                <tr>
-					<td>Bathroom</td>
-					<td><input type="text" name="bathroom" ></td>
-				</tr>
-                <tr>
-					<td>Wifi</td>
-					<td><input type="text" name="wifi" ></td>
-				</tr>
-                <tr>
-					<td>Pool</td>
-					<td><input type="text" name="pool" ></td>
-				</tr>
-                <tr>
-					<td>Description</td>
-					<td><input type="text" name="description" ></td>
-				</tr>
+				
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Photo</label>
+  					<input class="form-control" type="file" id="formFile" name="photo">
+				</div>
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Villa Name</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Villa Name" name="room_name">
+				</div>
+				
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Place</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Villa Place" name="room_place">
+				</div>
+				
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Price</label>
+  					<input type="number" class="form-control" id="formGroupExampleInput" placeholder="Villa Price" name="price">
+				</div>
+				
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Bedroom</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Total Bedroom" name="bedroom">
+				</div>
+                
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Bathroom</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Total Bathroom" name="bathroom">
+				</div>
+                
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Wifi</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Wifi" name="wifi">
+				</div>
+                
+				<div class="mb-3">
+  					<label for="formGroupExampleInput" class="form-label">Pool</label>
+  					<input type="text" class="form-control" id="formGroupExampleInput" placeholder="Pool Type" name="pool">
+				</div>
+                
+				<div class="mb-3">
+  					<label for="exampleFormControlTextarea1" class="form-label">Description</label>
+  					<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Description" name="description" type="text"></textarea>
+				</div>
+                
 				<tr>
 					<td></td>
-					<td><input type="submit" name="submit" value="Add data"></td>
+					<td><input class="btn btn-primary"type="submit" name="submit" value="Add data"></td>
 				</tr>		
 			</table>
 		</form>

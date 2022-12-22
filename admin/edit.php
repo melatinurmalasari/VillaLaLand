@@ -32,53 +32,75 @@ while ($item = mysqli_fetch_array($result)){
 
     <br/>
 
-    <a href="villabooking.php">BACK</a>
+    <a href="villabooking.php" class="btn btn-light">BACK</a>
 	<br/>
 	<br/>
 	<h3>VILLA</h3>
 		<form method="post" action="update.php?room_id=<?=$room_id ?>">
 			<table>
-				<tr>			
-					<td>Villa Name</td>
-					<td>
-						<input type="text" name="room_name" value="<?= $room_name ?>">
-					</td>
-				</tr>
-                <tr>
-					<td>Photo</td>
-					<td><input type="img" name="photo" value="<?=$photo?>"></td>
-				</tr>
-				<tr>
-					<td>Villa Place</td>
-					<td><input type="text" name="room_place" value="<?=$room_place?>"></td>
-				</tr>
-				<tr>
-					<td>Price</td>
-					<td><input type="number" name="price" value="<?=$price ?>"></td>
-				</tr>
-                <tr>
-					<td>Badroom</td>
-					<td><input type="text" name="bedroom" value="<?=$bedroom ?>"></td>
-				</tr>
-                <tr>
-					<td>Bathroom</td>
-					<td><input type="text" name="bathroom" value="<?=$bathroom ?>"></td>
-				</tr>
-                <tr>
-					<td>Wifi</td>
-					<td><input type="text" name="wifi" value="<?=$wifi ?>"></td>
-				</tr>
-                <tr>
-					<td>Pool</td>
-					<td><input type="text" name="pool" value="<?= $pool ?>"></td>
-				</tr>
-                <tr>
-					<td>Description</td>
-					<td><input type="text" name="description" value="<?=$description?>"></td>
-				</tr>
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Villa Name</label>
+  					<input class="form-control" type="text" id="formFile" name="room_name" value="<?= $room_name ?>">
+				</div>
+				
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Photo</label>
+  					<input class="form-control" type="file" id="formFile" name="photo" value="<?=$photo?>">
+				</div>
+
+                
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Villa Place</label>
+  					<input class="form-control" type="text" id="formFile" name="room_place" value="<?=$room_place?>">
+				</div>
+
+				
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Price</label>
+  					<input class="form-control" type="number" id="formFile" name="price" value="<?=$price ?>">
+				</div>
+
+				
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Bedroom</label>
+  					<input class="form-control" type="text" id="formFile" name="bedroom" value="<?=$bedroom ?>">
+				</div>
+
+                
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Bathroom</label>
+  					<input class="form-control" type="text" id="formFile" name="bathroom" value="<?=$bathroom ?>">
+				</div>
+
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Wifi</label>
+  					<input class="form-control" type="text" id="formFile" name="wifi" value="<?=$wifi ?>">
+				</div>
+
+                
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Pool</label>
+  					<input class="form-control" type="text" id="formFile" name="pool" value="<?=$pool ?>">
+				</div>
+
+                
+
+				<div class="mb-3">
+  					<label for="formFile" class="form-label">Description</label>
+  					<input class="form-control" type="text" id="formFile" name="description" value="<?=$description ?>">
+				</div>
+
+                
 				<tr>
 					<td></td>
-					<td><input type="submit" name="update" value="update data"></td>
+					<td><input class="btn btn-primary"type="submit" name="update" value="update data" ></td>
 				</tr>		
 			</table>
 		</form>

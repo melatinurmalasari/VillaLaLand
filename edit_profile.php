@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,13 +70,24 @@
 </head>
 
 <body>
-  <?php include "header.php" ?>
+  <?php 
+  include "header.php";
+  $result = mysqli_query($koneksi, "SELECT * FROM users WHERE id=$idUserInput");
 
+  while ($item = mysqli_fetch_array($result)){
+    $username = $item['username'];
+    $kota = $item['kota'];
+    $phone = $item['phone'];
+    $gender = $item['gender'];
+    $birth = $item['birth'];
+    $email = $item['email'];
+}
+   ?>
   <main>
-    <section class="hero-profile">
+    <form method="POST" enctype = "multipart/form-data">
+        <section class="hero-profile">
         <div class="row">
             <div class="col-lg">
-                  <img class="page-header card-img-top " src="https://i.imgur.com/8RKXAIV.jpg" alt="Card image cap">
                   <div class="container">
                   <div class="row little-profile">
                         <div class="col-md-2 profile-pic">
@@ -90,9 +102,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-2 pro-img">                        
-                          <img class="rounded-circle" src="https://i.imgur.com/8RKXAIV.jpg" style="width: 180px; height: 180px">
-                        </div> -->
                         <h2 class="col-md-2" style="margin: 20px; font-weight: 600;">Edit Profile</h2>
                     </div>
                   
@@ -101,44 +110,30 @@
                             <h4 class="card-title" style="font-weight: 600;">Personal Data</h4>
                             <div class="line-black"></div>
                             <div class="row mt-3">
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Full Name</label><input type="text" class="form-control" placeholder="enter fullname" value=""></div>
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Phone</label><input type="text" class="form-control" placeholder="enter number phone" value=""></div>
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Email</label><input type="text" class="form-control" placeholder="enter email address" value=""></div>
+                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Full Name</label><input type="text" name="username" class="form-control" placeholder="enter fullname" value="<?=$username ?>"></div>
+                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Phone</label><input type="text" name="phone" class="form-control" placeholder="enter number phone" value="<?=$phone ?>"></div>
+                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Email</label><input type="text" name="email" class="form-control" placeholder="enter email address" value="<?= $email ?>"></div>
                                 <div class="row mt-2" style="margin-top:20px;">
                                     <div class="col-md-6">
                                         <label class="labels genders" style="font-weight: 500;">Gender</label>
                                         <div class="input-group mb-3">
-                                            <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                                <option value="">Gender</option>
-                                                <option value="1">Man</option>
-                                                <option value="2">Ladies</option>
+                                            <select class="form-select mb-3" name="gender" aria-label=".form-select-lg example">
+                                                <option value="Man">Man</option>
+                                                <option value="Ladies">Ladies</option>
                                             </select> 
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <label class="labels" style="font-weight: 500;">Birthdate</label>
                                         <div>
-                                            <input class="form-control" type="date" id="birthday" name="birthday">
+                                            <input class="form-control" type="date" id="birth" name="birth">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12" style="margin-top:-10px;">
-                                    <label class="labels" style="font-weight: 500;">City of Residence</label>
-                                    <div class="input-group mb-3">
-                                        <select class="form-select mb-3" aria-label=".form-select-lg example">
-                                            <option value="">City</option>
-                                            <option value="1">Jakarta</option>
-                                            <option value="2">Palembang</option>
-                                            <option value="3">Bogor</option>
-                                            <option value="4">Tangerang</option>
-                                            <option value="5">Bali</option>
-                                            <option value="6">Padang</option>
-                                        </select> 
-                                    </div>
-                                </div>
+                                <div class="col-md-12"><label class="labels" style="font-weight: 500;">City</label><input type="text" name="kota" class="form-control" placeholder="enter city" value="<?=$kota ?>"></div>
                                 <div class="text-center" style="margin-top:5px;">
-                                    <a href="" class="btn btn-secondary rounded-pill">Cancel</a>
-                                    <a href="" class="btn btn-secondary rounded-pill">Save Profile</a>
+                                    <a href="profile.php" class="btn btn-secondary rounded-pill">kembali ke Halaman Profile</a>
+                                    <input class="btn btn-secondary rounded-pill" type="submit" name="update" value="Save Profile" >
                                 </div>
                             </div>
                         </div>
@@ -148,7 +143,22 @@
             </div>    
         </div>
     </section>
+    </form>
 </main>
+
+<?php
+if(isset($_POST['update'])){
+     $username = $_POST['username'];
+    $kota = $_POST['kota'];
+    $phone = $_POST['phone'];
+    $gender = $_POST['gender'];
+    $birth = $_POST['birth'];
+    $email = $_POST['email'];
+    
+    // update data ke database
+    $result = mysqli_query($koneksi,"UPDATE users set kota='$kota', phone='$phone', gender='$gender', birth='$birth', email='$email' WHERE id=$idUserInput;");
+}
+?>
   
     <?php include "footer.php" ?>
     <script type="text/javascript">

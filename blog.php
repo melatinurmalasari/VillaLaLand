@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -21,9 +22,17 @@
   <main>
     <section class="blog pt-120">
       <div class="container">
-        <center>
-          <h1 class="mb-5" style="margin: 50px 0; weight: 600;">Share Your Stay Experience With Us</h1>
-        </center>
+        <div class="row">
+            <div class="col-md-6">
+              <h1 class="mb-5" style="margin: 50px 0; weight: 600;">Share Your Stay Experience With Us</h1>
+            </div>
+            <div class="d-flex col-md-5 justift-between-end" style="margin-top: 50px;">
+              <div class="ms-auto p-2">
+                <a href="edit_blog.php" class="btn btn-primary"><span class="bi bi-plus"></span>Add Blog</a>
+              </div>
+            </div>
+        </div>
+      
         <hr>
         <div class="row" style="margin: 20px 0;">
           <div class="col-sm-12 col-md-8" style="margin: 30px 0;">

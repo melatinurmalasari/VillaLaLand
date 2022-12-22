@@ -44,28 +44,35 @@
                           $query = $koneksi->query("SELECT * FROM `users` WHERE id = $idUserInput") or die(mysql_error()); 
                           while($fetch = $query->fetch_array()){
                             ?>
-                        <div class="col-md-4" style="margin: 20px; ">
+                    </div>
+                    <div class="col-md-4" style="margin: 20px; ">
                             <h2 style="font-weight: 600;"><?php echo $username ?></h2>
                             <p><?php echo $fetch['kota'] ?></p> 
-                        </div>
+                    </div>
                         `<?php } ?>
-                        <div class="col-md-4" style="margin-top: 50px;">
-                          <a href="edit_profile.php?id_user=<?= $idUserInput ?>" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                        
+                        <div class="d-flex col-md-5 justift-between-end" style="margin-top: 50px;">
+                        
+                          <div class="ms-auto p-2">
+                            
+                            <a href="edit_profile.php?id_user=<?= $idUserInput ?>" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
+                            
+                            <form action="" method="POST" class="login-email">
+                              <div class="input-group ms-auto p-2">
+                                <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
+                              </div>
+                            </form>
+                          </div>
+                          
                         </div>
-                        <div class="col-md-4" style="margin-top: 50px;">
-                          <form action="" method="POST" class="login-email">
-                            <div class="input-group">
-                              <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    <div class="d-flex col-md-5" style="margin-top: 50px;">
+                        
+                      
+                    <!-- <div class="d-flex col-md-5" style="margin-top: 50px;">
                       <div class="ms-auto p-2">
                         <a href="edit_profile.php" class="btn btn-secondary rounded-pill" data-abc="true">Edit Profile</a>
                         <a href="logout.php" class="btn btn-secondary rounded-pill" data-abc="true">Logout</a>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                     <div class="tab-book">
                       <button class="tablinks" onclick="openCity(event, 'current-book')">Current Booking</button>

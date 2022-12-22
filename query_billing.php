@@ -48,7 +48,7 @@ if (isset($_POST['add_guest'])){
 				
 				$koneksi->query("INSERT INTO `transaction`(guest_id, room_id, checkin, checkout, first_name, last_name, contactno, email, hari_menginap, hargaKamar, id_user) VALUES('$guest_id', '$room_id', '$checkin', '$checkout', '$firstname', '$lastname', '$phone', '$email', '$hari', '$totalInput', '$idUserInput')") or die(mysqli_error());
 				$last_id = mysqli_insert_id($koneksi);
-				header("location: receipt.php?transaction_id=$last_id&room_id=$room_id");
+				header("location: receipt.php?transaction_id=$last_id&room_id=$room_id&guest_id=$guest_id");
 			}else{
 				echo "<script>alert('Silahkan masukkan data dengan benar!')</script>";
 			}

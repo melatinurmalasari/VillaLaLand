@@ -102,20 +102,29 @@
                                 </div>
                             </div>
                         </div>
-                        <h2 class="col-md-2" style="margin: 20px; font-weight: 600;">Edit Profile</h2>
+                        <h1 class="col-md-2" style="margin-left: 30px; margin-top: -50px; font-weight: 600;">Edit Profile</h1>
                     </div>
                   
                     <div class="card w3-padding-24 center" style="margin-top:10px; border-radius: 25px; padding:30px;   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
                         <div class="card-body">
-                            <h4 class="card-title" style="font-weight: 600;">Personal Data</h4>
+                            <h2 class="card-title" style="font-weight: 600;">Personal Data</h2>
                             <div class="line-black"></div>
                             <div class="row mt-3">
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Full Name</label><input type="text" name="username" class="form-control" placeholder="enter fullname" value="<?=$username ?>"></div>
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Phone</label><input type="text" name="phone" class="form-control" placeholder="enter number phone" value="<?=$phone ?>"></div>
-                                <div class="col-md-12" style="margin-top:10px;"><label class="labels" style="font-weight: 500;">Email</label><input type="text" name="email" class="form-control" placeholder="enter email address" value="<?= $email ?>"></div>
-                                <div class="row mt-2" style="margin-top:20px;">
-                                    <div class="col-md-6">
-                                        <label class="labels genders" style="font-weight: 500;">Gender</label>
+                                <div class="col-md-12" style="margin-top:20px;">
+                                    <label class="labels" style="font-weight: 500; font-size: 20px;">Full Name</label>
+                                    <input type="text" name="username" class="form-control" placeholder="enter fullname" style="margin-top:10px;" value="<?=$username ?>">
+                                </div>
+                                <div class="col-md-12" style="margin-top:20px;">
+                                    <label class="labels" style="font-weight: 500; font-size: 20px;">Phone</label>
+                                    <input type="text" name="phone" class="form-control" placeholder="enter number phone" style="margin-top:10px;" value="<?=$phone ?>">
+                                </div>
+                                <div class="col-md-12" style="margin-top:20px;">
+                                    <label class="labels" style="font-weight: 500; font-size: 20px;">Email</label>
+                                    <input type="text" name="email" class="form-control" placeholder="enter email address" style="margin-top:10px;" value="<?= $email ?>">
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-6"  style="margin-top:20px;">
+                                        <label class="labels genders" style="font-weight: 500; font-size: 20px;">Gender</label>
                                         <div class="input-group mb-3">
                                             <select class="form-select mb-3" name="gender" aria-label=".form-select-lg example">
                                                 <option value="Man">Man</option>
@@ -123,17 +132,20 @@
                                             </select> 
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <label class="labels" style="font-weight: 500;">Birthdate</label>
+                                    <div class="col-md-6"  style="margin-top:20px;">
+                                        <label class="labels" style="font-weight: 500; font-size: 20px;">Birthdate</label>
                                         <div>
-                                            <input class="form-control" type="date" id="birth" name="birth">
+                                            <input class="form-control" type="date" id="birth" name="birth" style="margin-top:10px;">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-12"><label class="labels" style="font-weight: 500;">City</label><input type="text" name="kota" class="form-control" placeholder="enter city" value="<?=$kota ?>"></div>
-                                <div class="text-center" style="margin-top:5px;">
-                                    <a href="profile.php" class="btn btn-secondary rounded-pill">kembali ke Halaman Profile</a>
-                                    <input class="btn btn-secondary rounded-pill" type="submit" name="update" value="Save Profile" >
+                                <div class="col-md-12">
+                                    <label class="labels" style="font-weight: 500; font-size: 20px;">City</label>
+                                    <input type="text" name="kota" class="form-control" style="margin-top:10px;" placeholder="enter city" value="<?=$kota ?>">
+                                </div>
+                                <div class="text-center" style="margin-top:20px;">
+                                    <a href="profile.php" class="btn btn-secondary rounded-pill" style="padding: 15px;">Back to Profile Page</a>
+                                    <input class="btn btn-secondary rounded-pill" type="submit" name="update" value="Save Profile" style="padding: 15px;" >
                                 </div>
                             </div>
                         </div>

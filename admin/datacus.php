@@ -35,16 +35,15 @@
         <thead>
             <tr>
                 <th scope="col">No</th>
-                <th scope="col"></th>
-                <th scope="col"></th>  
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col"></th>  
-                <th scope="col"></th>  
-                <th scope="col"></th>
+                <th scope="col">Id Transaction</th>
+                <th scope="col">Id Guest</th>  
+                <th scope="col">Id Room</th>
+                <th scope="col">Checkin</th>
+                <th scope="col">Checkout</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">No Contact</th>  
+                <th scope="col">Email</th>  
                 <th scope="col">#</th>                     
             </tr>
         </thead>
@@ -56,20 +55,17 @@
         ?>
             <tr>
                 <td><?php echo $no++ ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
-                <td><?php echo $data[''] ?></td>
+                <td><?php echo $data['transaction_id'] ?></td>
+                <td><?php echo $data['guest_id'] ?></td>
+                <td><?php echo $data['room_id'] ?></td>
+                <td><?php echo $data['checkin'] ?></td>
+                <td><?php echo $data['checkout'] ?></td>
+                <td><?php echo $data['first_name'] ?></td>
+                <td><?php echo $data['last_name'] ?></td>
+                <td><?php echo $data['contactno'] ?></td>
+                <td><?php echo $data['email'] ?></td>
                 <td>
-                    <a href="tampilById.php?room_id=<?php echo $data['room_id'] ?>" class="btn btn-info">Detail</a>
-                    <a href="edit.php?room_id=<?= $data['room_id'] ?>" class="btn btn-success">Edit</a>
-                    <a href="delete.php?room_id=<?php echo $data['room_id']?>" class="btn btn-danger">Delete</a>
+                    <a href="" class="btn btn-info">Konfirmasi</a>
                 </td>
                 
             </tr>

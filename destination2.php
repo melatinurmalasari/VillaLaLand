@@ -30,14 +30,17 @@
           ?>
           <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="cat-card card shadow shadow-md rounded-4 p-4 h-100" style="border: none !important;">
-              <br>
-              <br>
-              <br>
-              <br>
               <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
-                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <div class="row" style="margin-top: 5px;">
+                  <div class="d-flex col-md-1 justify-content-start" >
+                    <img src="assets/img/tool.png" alt="place"  style="width:20px; height:20px;">
+                  </div>
+                  <div class="col-lg" style="margin-left: -5px;" >
+                    <p class="card-title"><?php echo $fetch['room_place'] ?></p>
+                  </div>
+                </div>  
                 <hr>
                 <p class="card-text">
                   <?php echo $fetch['description'] ?>

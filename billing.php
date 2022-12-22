@@ -18,41 +18,47 @@ $idInput = $_GET['room_id']; ?>
   <main>
     <section class="billing pt-120">
       <div class="container">
-        <h1 class="text-center">Billing Details</h1>
-        <div class="row gx-5">
-          <div class="col-sm-12 col-md-8 border-md-end justify-content-center mx-auto">
-            <form method="post" enctype = "multipart/form-data">
-              <div class="mb-3">
-                <label>First name</label>
-                <input type="text" class="form-control" name="first_name" required>
+      <div class="card  shadow shadow-md">
+        <div class="card-body">
+          <h1 class="text-center">Billing Details</h1><br>
+          <div class="row gx-5">
+            <div class="col-sm-12 col-md-8 border-md-end justify-content-center mx-auto">
+              <form method="post" enctype = "multipart/form-data">
+                <div class="mb-3">
+                  <label>First name</label>
+                  <input type="text" class="form-control" name="first_name" required>
+                </div>
+                <div class="mb-3">
+                  <label>Last name</label>
+                  <input type="text" class="form-control" name="last_name" required>
+                </div>
+                <div class="mb-3">
+                  <label>Phone</label>
+                  <input type="text" class="form-control" name="contactno" required>
+                </div>
+                <div class="mb-3">
+                  <label>Email Address</label>
+                  <input type="text" class="form-control" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="check-in">Check In</label>
+                    <input class="form-control" type="date" id="checkin" name="checkin" required>
+                </div>
+                <div class="mb-3">
+                    <label for="check-out">Check Out</label>
+                    <input class="form-control" type="date" id="checkout" name="checkout" required>
+                </div>
+                <br>
+                <div class="col-12">
+                <input type="submit" name="add_guest" value="Next" class="btn btn-primary fw-bold w-100">
+                <?Php require_once 'query_billing.php' ?>
               </div>
-              <div class="mb-3">
-                <label>Last name</label>
-                <input type="text" class="form-control" name="last_name" required>
-              </div>
-              <div class="mb-3">
-                <label>Phone</label>
-                <input type="text" class="form-control" name="contactno" required>
-              </div>
-              <div class="mb-3">
-                <label>Email Address</label>
-                <input type="text" class="form-control" name="email" required>
-              </div>
-              <div class="mb-3">
-                  <label for="check-in">Check In</label>
-                  <input class="form-control" type="date" id="checkin" name="checkin" required>
-              </div>
-              <div class="mb-3">
-                  <label for="check-out">Check Out</label>
-                  <input class="form-control" type="date" id="checkout" name="checkout" required>
-              </div>
-              <div class="col-12">
-              <input type="submit" name="add_guest" value="Next" class="btn btn-primary fw-bold w-100">
-              <?Php require_once 'query_billing.php' ?>
+              </form>
             </div>
-            </form>
-          </div>
         </div>
+        </div>
+      </div>
+       
       </div>
     </section>
   </main>

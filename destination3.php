@@ -14,7 +14,7 @@
 <body>
   <?php include "header.php" ?>
 
-  <main>
+  <main style="margin-top:50px;">
     <?php
       require_once 'koneksi.php';
       $query = $koneksi->query("SELECT * FROM `room` where room_id = '$_GET[room_id]'") or die(mysql_error()); 
@@ -29,7 +29,15 @@
     <section class="desc">
       <div class="container">
         <h1 class="fw-bold mt-3"><?php echo $fetch['room_name'] ?></h1>
-        <h3 class="card-title"><?php echo $fetch['room_place'] ?></h3>
+        
+        <div class="row">
+          <div class="d-flex col-md-1 justify-content-start" >
+            <img src="assets/img/tool.png" alt="place"  style="width:30px;">
+          </div>
+          <div class="col-lg" style="margin-left: -65px;" >
+            <h3 class="card-title"><?php echo $fetch['room_place'] ?></h3>
+          </div>
+        </div>  
         <hr>
         <div class="row">
           <div class="col">
@@ -42,38 +50,42 @@
       <?php } ?>
     </section>
 
-    <section class="facilities">
+    <section class="facilities" style="margin-top:10px;">
       <?php
       require_once 'koneksi.php';
       $query = $koneksi->query("SELECT * FROM `room` where room_id = '$_GET[room_id]'") or die(mysql_error()); 
       while($fetch = $query->fetch_array()){
       ?>
       <div class="container">
-        <h5>Facilities</h5>
-        <hr>
+        <h4  style="margin-bottom:20px;">Facilities</h4>
+        <div class="line-black" style="margin-bottom:40px;"></div>
         <div class="row g-4">
           <div class="col-md-6 col-sm-12">
-            <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="" alt="">
-              <h3><?php echo $fetch['bedroom'] ?></h3>
+            <div class=" card d-flex justify-content-center align-items-center p-5">
+              <img src="assets/img/bedroom.png" style="width : 20%; height : 20%;" alt="">
+              <br><br>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['bedroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="" alt="">
-              <h3><?php echo $fetch['bathroom'] ?></h3>
+              <img src="assets/img/bathroom.png" style="width : 21.5%; height : 21.5%;" alt="">
+              <br><br>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['bathroom'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="" alt="">
-              <h3><?php echo $fetch['wifi'] ?></h3>
+              <img src="assets/img/wifi.png" style="width : 32.4%; height : 32.4%;" alt="">
+              <br><br>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['wifi'] ?></h3>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="card d-flex justify-content-center align-items-center p-5">
-              <img src="" alt="">
-              <h3><?php echo $fetch['pool'] ?></h3>
+              <img src="assets/img/pool.png" style="width : 23%; height : 23%;" alt="">
+              <br><br>
+              <h3 style="font-weight: 500; font-size: 25px"><?php echo $fetch['pool'] ?></h3>
             </div>
           </div>
         </div>
@@ -84,7 +96,7 @@
     <section class="search pt-5 mt-5">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col" style="margin:20px 0 50px;">
                 <div class="col-12">
                   <a href="billing.php?room_id=<?php echo $_GET['room_id']?>" class="btn btn-primary fw-bold w-100">Book Your Villas</a>
                 </div>

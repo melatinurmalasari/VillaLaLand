@@ -56,9 +56,9 @@
             <div class="card bg-primary p-md-4 p-sm-0">
               <div class="row m-4 p-md-4 p-sm-0">
                 <div class="col-12 mb-3">
-                  <h1 class="text-center text-white">Search for Your Villa</h1>
+                  <h1 class="text-center text-white">Tolong nanti di ganti jadi kata-kata pemanis ya.</h1>
                 </div>
-                <div class="col-md-6 col-sm-12 mb-3">
+                <!-- <div class="col-md-6 col-sm-12 mb-3">
                   <input type="text" class="form-control" placeholder="Check In">
                 </div>
                 <div class="col-md-6 col-sm-12 mb-3">
@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-12">
                   <a href="destination2.php" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -111,21 +111,25 @@
           </div>
           <div class="container">
         <div class="row gx-5">
-          <?php
+        <?php
           require_once 'koneksi.php';
           $query = $koneksi->query("SELECT * FROM `room` LIMIT 3") or die(mysql_error()); 
           while($fetch = $query->fetch_array()){
           ?>
           <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="cat-card card shadow shadow-md rounded-4 p-4 h-100" style="border: none !important;">
-              <br>
-              <br>
-              <br>
-              <br>
               <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
-                <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                <div class="row" style="margin-top: 5px;">
+                  <div class="d-flex col-md-1 justify-content-start" >
+                    <img src="assets/img/tool.png" alt="place"  style="width:20px; height:20px;">
+                  </div>
+                  <div class="col-lg" style="margin-left: -5px;" >
+                  <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                  </div>
+                </div> 
+                
                 <hr>
                 <p class="card-text">
                   <?php echo $fetch['description'] ?>
@@ -133,12 +137,11 @@
                 <br>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h5 class="mb-4">Rp. <?php echo $fetch['price'] ?> / Day</h5><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">Book Now</a></li>
+                <li class="list-group-item"><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a></li>
               </ul>
             </div>
           </div>
-            <?php } ?>
-          </div>
+          <?php } ?>
         </div>
         </div>
       </div>
@@ -154,7 +157,7 @@
           </div>
         </div><br>
         <div class="line-white reveal"></div><br><br>
-        <div class="swiper px-8 reveal fade-bottom">
+        <div class="swiper px-10 reveal fade-bottom">
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-testimonials d-flex flex-column p-4 rounded-4 text-white">
               <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam molestias inventore

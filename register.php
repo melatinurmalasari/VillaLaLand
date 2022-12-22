@@ -48,9 +48,7 @@ if (isset($_POST['submit'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
- 
     <link rel="stylesheet" href="assets/css/login.css">
  
     <title>Register</title>
@@ -59,7 +57,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
-            <div class="input-group">
+            <div class="input-group" style="border-color: yellow ;">
                 <input type="text" placeholder="Username" name="username" value="<?php echo $username; ?>" required>
             </div>
             <div class="input-group">

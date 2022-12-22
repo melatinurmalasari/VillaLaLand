@@ -20,13 +20,11 @@
       style="background: url(assets/img/Hero.png); height: 100vh; background-repeat: no-repeat; background-position: center; background-size: cover;">
       <div class="container h-100">
         <div class="row justify-content-start align-items-center h-100">
-          <div class="col-sm-12 col-md-8 text-white">
-            <h1 class="fs-64">Let's Enjoy Our <br> Wonderful Indonesia </h1>
-            <p class="fs-20 fw-normal">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et
-              dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat.
+          <div class="col-sm-12 col-md-8 text-white" style="position:absolute; bottom:150px; left:16px;">
+            <h1 class="fs-64">Let's Enjoy Our <br> Wonderful Indonesia </h1><br>
+            <div class="line-white"></div><br>
+            <p class="fs-20 fw-normal" style="weight: 600px;">
+              December 10th, 2022
             </p>
           </div>
         </div>
@@ -43,24 +41,24 @@
               necessitatibus natus commodi dolore quibusdam id atque! Eaque modi, molestiae incidunt ex numquam quidem
               autem eos id, ea consequatur aut itaque. Soluta quasi placeat numquam harum, nobis aspernatur adipisci
               cupiditate ea, dicta odio officia quibusdam ducimus reprehenderit.
-            </p>
-            <img src="assets/img/Hero.png" class="d-block w-100" alt="">
+            </p> <br>
+            <img src="assets/img/Hero.png" class="d-block w-100" alt=""><br>
             <h3>The Gate to Heaven on Earth</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, est? Est impedit quas pariatur sed quam
               temporibus voluptatum sit possimus et, dolores eaque assumenda non alias quo excepturi culpa, doloribus
               eius! Ut iure aliquam reiciendis repellendus laudantium veritatis. Non, rerum a delectus qui labore
               quaerat repudiandae recusandae dignissimos ab laudantium.
-            </p>
+            </p> <br>
             <p class="mb-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam architecto, adipisci quibusdam placeat
               natus qui in sint deleniti illum voluptatibus, repellendus nulla obcaecati cumque fugit quod aperiam
               similique provident corrupti!
-            </p>
+            </p><br>
             <h4 class="my-4">Comment</h4>
             <textarea class="bg-secondary bg-opacity-25 form-control" cols="30" rows="10"></textarea>
-            <a href="" class="btn btn-primary mt-3"><b>Respond</b></a>
-            <hr>
+            <a href="" class="btn btn-primary mt-3"><b>Respond</b></a><br>
+            <hr> <br>
             <div class="row mt-4 mb-4">
               <div class="col-sm-12 col-md-2">
                 <img src="./assets/img/Profil.png" class="d-block w-50 mx-auto" alt="">

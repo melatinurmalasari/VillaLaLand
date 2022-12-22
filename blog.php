@@ -21,10 +21,12 @@
   <main>
     <section class="blog pt-120">
       <div class="container">
-        <h1 class="fw-bold mb-5">Share Your Stay Experience With Us</h1>
+        <center>
+          <h1 class="mb-5" style="margin: 50px 0; weight: 600;">Share Your Stay Experience With Us</h1>
+        </center>
         <hr>
         <div class="row" style="margin: 20px 0;">
-          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
             <a href="blog2.php" class="text-decoration-none" style="color:black;">
               <h2>Relax and feel the nature, <br> unforgattable view!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -32,13 +34,13 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
             </a>
           </div>
-          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
             <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>
         <div class="row" style="margin: 20px 0;">
-          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
             <a href="blog2.php" class="text-decoration-none" style="color:black;">
               <h2>Relax and feel the nature, <br> unforgattable view!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -46,13 +48,13 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
             </a>
           </div>
-          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
             <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>
-        <div class="row" style="margin: 20px 0;">
-          <div class="col-sm-12 col-md-8" style="margin: 50px 0;">
+        <div class="row" style="margin: 20px 0 0;">
+          <div class="col-sm-12 col-md-8" style="margin: 30px 0;">
             <a href="blog2.php" class="text-decoration-none" style="color:black;">
               <h2>Relax and feel the nature, <br> unforgattable view!</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -60,12 +62,12 @@
               laboris nisi ut aliquip ex ea commodo consequat.</p>
             </a>
           </div>
-          <div class="col-sm-12 col-md-4" style="margin: 50px 0;">
+          <div class="col-sm-12 col-md-4" style="margin: 30px 0;">
             <img src="assets/img/VillaCard1.png" class="d-block" alt="" style="height:200px; width:350px;">
           </div>
         </div>
         <hr>
-        <div class="row">
+        <div class="row" style="margin: 50px 0;">
           <div class="col text-center">
             <a href="" class="btn btn-primary mt-5">Load More Blog</a>
           </div>
@@ -75,6 +77,9 @@
     
     <?php include "footer.php" ?>
   </main>
+
+  <script src="scripts/reveal.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 

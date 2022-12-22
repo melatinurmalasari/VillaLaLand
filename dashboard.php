@@ -53,46 +53,16 @@
       <div class="container">
       <div class="row">
           <div class="col">
-            <div class="card bg-primary p-md-4 p-sm-0">
               <div class="row m-4 p-md-4 p-sm-0">
                 <div class="col-12 mb-3">
-                  <h1 class="text-center text-white">Tolong nanti di ganti jadi kata-kata pemanis ya.</h1>
+                  <h1 class="text-center">We working with our world partners. <br>
+                  and you are our partners!</h1>
                 </div>
-                <!-- <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check In">
-                </div>
-                <div class="col-md-6 col-sm-12 mb-3">
-                  <input type="text" class="form-control" placeholder="Check Out">
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option value="">Bedrooms</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option selected>Area</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <select class="form-select mb-3" aria-label=".form-select-lg example">
-                    <option selected>Price Range</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                </div>
-                <div class="col-12">
-                  <a href="destination2.php" class="btn btn-primary fw-bold w-100">Find Your Villas</a>
-                </div> -->
+                <img src="assets/img/1.png" alt="" style="width:30%; height:30%; margin-right: 70px;">
+                <img src="assets/img/2.png" alt="" style="width:30%; height:30%; margin-right: 50px;"> 
+                <img src="assets/img/3.png" alt="" style="width:30%; height:30%;">
               </div>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -100,7 +70,7 @@
     <!-- end search villa -->
 
     <!-- Exclusive Offers Section -->
-    <section class="offers pt-120 reveal fade-bottom">
+    <section class="offers pt-100 reveal fade-bottom">
       <div class="container">
         <div class="row g-4 justify-content-center align-items-center" >
           <div class="col-sm-12 col-md-8">
@@ -118,23 +88,18 @@
           ?>
           <div class="cat-wrap col-xl-4 col-md-6 col-sm-12 my-4">
             <div class="cat-card card shadow shadow-md rounded-4 p-4 h-100" style="border: none !important;">
-              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" alt="...">
+              <img src="<?php echo $fetch['photo'] ?>" class="card-img-top" style="width:350px; height:180px;" alt="...">
               <div class="card-body py-4 px-0">
                 <h4 class="card-title"><?php echo $fetch['room_name'] ?></h4>
+                <hr>
                 <div class="row" style="margin-top: 5px;">
                   <div class="d-flex col-md-1 justify-content-start" >
                     <img src="assets/img/tool.png" alt="place"  style="width:20px; height:20px;">
                   </div>
                   <div class="col-lg" style="margin-left: -5px;" >
-                  <h6 class="card-title"><?php echo $fetch['room_place'] ?></h6>
+                    <h6 class="card-title">Rp. <?php echo $fetch['price'] ?> / Day</h6>
                   </div>
                 </div> 
-                
-                <hr>
-                <p class="card-text">
-                  <?php echo $fetch['description'] ?>
-                </p>
-                <br>
               </div>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><a href="destination3.php?room_id=<?php echo $fetch['room_id']?>" class="btn btn-primary fw-semibold rounded-pill w-100">View More</a></li>

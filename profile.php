@@ -54,9 +54,9 @@
 <body>
   <?php include "header.php" ?>
   <?php 
-$idTransaksi = mysqli_query($koneksi, "SELECT transaction_id FROM `transaction` WHERE id_user = '$idUserInput';");
+$idTransaksi = mysqli_query($koneksi, "SELECT transaction_id FROM `transaction` WHERE first_name = '$username';");
 $idTransaksiFetch = mysqli_fetch_array($idTransaksi);
-$idTransaksiInput = $idTransaksiFetch['transaction_id'];
+$idTransaksiInput = $idTransaksiFetch['room_id'];
 ?>
   <main>
     <section class="hero-profile">

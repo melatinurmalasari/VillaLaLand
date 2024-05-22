@@ -11,7 +11,7 @@
  <p align="center">- K3521042  - Melati Nur Malasari</p>
  <p align="center">- K3521053  - Muhammad Dzakwan 'Azmiy</p> 
 
-Proyek ini bertujuan untuk memisahkan dan mengeksplorasi tiga algoritma segmentasi citra yang berbeda: Absolute Difference, Mixture of Gaussian 2 (MOG2), dan K-Nearest Neighbors (KNN). Eksperimen dilakukan terhadap parameter operasi morfologi, kernel filter, dan parameter algoritma segmentasi untuk memahami pengaruhnya terhadap hasil citra segmentasi (binary image).
-</h3> 
+<p align="center">Proyek ini bertujuan untuk memisahkan dan mengeksplorasi tiga algoritma segmentasi citra yang berbeda: Absolute Difference, Mixture of Gaussian 2 (MOG2), dan K-Nearest Neighbors (KNN). Eksperimen dilakukan terhadap parameter operasi morfologi, kernel filter, dan parameter algoritma segmentasi untuk memahami pengaruhnya terhadap hasil citra segmentasi (binary image)</p>
+ 
 </p>
 

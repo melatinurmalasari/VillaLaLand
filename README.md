@@ -4,12 +4,12 @@
  <h2 align="center">GitHub Readme Stats</h2>
  <p align="center">Kelompok 3</p>
 
- <h2 align="center">Kelompok 3</h2>
- <h3 align="center">- K3521001  - Abi Khoir Naufal  Zaqli</h3> 
- <h3 align="center">- K3521010  - Annisa Nur Chasidiyah</h3> 
- <h3 align="center">- K3521016  - Danang Kurniawan</h3> 
- <h3 align="center">- K3521042  - Melati Nur Malasari</h3> 
- <h3 align="center">- K3521053  - Muhammad Dzakwan 'Azmiy</h3> 
+ 
+ <p align="center">- K3521001  - Abi Khoir Naufal  Zaqli</p>
+ <p align="center">- K3521010  - Annisa Nur Chasidiyah</p>
+ <p align="center">- K3521016  - Danang Kurniawan</p>
+ <p align="center">- K3521042  - Melati Nur Malasari</p>
+ <p align="center">- K3521053  - Muhammad Dzakwan 'Azmiy</p> 
 
 Proyek ini bertujuan untuk memisahkan dan mengeksplorasi tiga algoritma segmentasi citra yang berbeda: Absolute Difference, Mixture of Gaussian 2 (MOG2), dan K-Nearest Neighbors (KNN). Eksperimen dilakukan terhadap parameter operasi morfologi, kernel filter, dan parameter algoritma segmentasi untuk memahami pengaruhnya terhadap hasil citra segmentasi (binary image).
 </h3> 
